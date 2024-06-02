@@ -11,7 +11,7 @@ import Foundation
 public func decodePList() -> [String] {
     
         /// Get the URL of the plist file in the main bundle
-    guard let fileURL = Bundle.module.url(forResource: "Resources/symbol_categories", withExtension: "plist") else {
+    guard let fileURL = Bundle.module.url(forResource: "Symbols/symbol_categories", withExtension: "plist") else {
         fatalError("Can't find symbol_categories.plist")
     }
     
