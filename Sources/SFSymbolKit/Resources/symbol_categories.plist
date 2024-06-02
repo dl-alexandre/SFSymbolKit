@@ -24985,6 +24985,10 @@
 		<string>multicolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>swift</key>
+	<array>
+		<string>custom</string>
+	</array>
 	<key>swiftdata</key>
 	<array>
 		<string>whatsnew</string>
