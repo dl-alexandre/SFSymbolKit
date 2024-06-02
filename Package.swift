@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "SFSymbolKit",
             resources: [
-                .copy("Resources")
+                .copy("Symbols")
             ]),
         .testTarget(
             name: "SFSymbolKitTests",
