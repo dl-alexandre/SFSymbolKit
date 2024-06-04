@@ -1,8 +1,8 @@
 //
 //  FontWeights.swift
-//
-//
-//  Created by Dalton Alexandre on 5/29/24.
+//  SFSymbolKit
+//  https://github.com/dl-alexandre/SFSymbolKit
+//  See LICENSE for license information.
 //
 
 import SwiftUI

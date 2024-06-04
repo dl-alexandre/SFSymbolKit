@@ -1,3 +1,10 @@
+//
+//  SFSymbolKitTests.swift
+//  SFSymbolKit
+//  https://github.com/dl-alexandre/SFSymbolKit
+//  See LICENSE for license information.
+//
+
 import XCTest
 @testable import SFSymbolKit
 

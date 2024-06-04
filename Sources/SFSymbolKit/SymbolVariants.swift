@@ -1,10 +1,9 @@
 //
 //  SymbolVariants.swift
+//  SFSymbolKit
+//  https://github.com/dl-alexandre/SFSymbolKit
+//  See LICENSE for license information.
 //
-//
-//  Created by Dalton Alexandre on 5/29/24.
-//
-
 import SwiftUI
     
     /// `SymbolVariants` is an enumeration that defines a list of symbol shapes and their variants.
