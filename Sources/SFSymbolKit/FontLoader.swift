@@ -14,7 +14,7 @@ public struct FontLoader {
     }
     
     static func registerFont(fileName: String) {
-        guard let fontURL = Bundle.module.url(forResource: "Symbols/(fileName)", withExtension: nil),
+        guard let fontURL = Bundle.module.url(forResource: "Symbols/\(fileName)", withExtension: nil),
               let fontData = NSData(contentsOf: fontURL),
               let dataProvider = CGDataProvider(data: fontData),
               let fontRef = CGFont(dataProvider) else {
