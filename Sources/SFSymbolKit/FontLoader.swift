@@ -10,12 +10,11 @@ import Foundation
 
 public struct FontLoader {
     public static func loadFonts() {
-        
         fontNames.forEach { registerFont(fileName: $0) }
     }
     
     static func registerFont(fileName: String) {
-        guard let fontURL = Bundle.module.url(forResource: fileName, withExtension: nil),
+        guard let fontURL = Bundle.module.url(forResource: "Symbols/(fileName)", withExtension: nil),
               let fontData = NSData(contentsOf: fontURL),
               let dataProvider = CGDataProvider(data: fontData),
               let fontRef = CGFont(dataProvider) else {
