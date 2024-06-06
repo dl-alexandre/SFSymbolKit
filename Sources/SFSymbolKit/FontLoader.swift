@@ -47,7 +47,7 @@ public struct FontLoader {
 //    }
 #if os(iOS) || os(tvOS) || os(visionOS)
     static func register(fileName: String) {
-        guard let url = Bundle.module.url(forResource: fileName, withExtension: nil) else {
+        guard let url = Bundle.module.url(forResource: "Symbols/\(fileName)", withExtension: nil) else {
             assertionFailure("Can not locate font \(fileName)")
             return
         }
