@@ -16,11 +16,11 @@ import UIKit
 
 public struct FontLoader {
     public static func loadFonts() {
-        fontNames.forEach { register(fontName: $0) }
+        fontNames.forEach { registerFont(fileName: $0) }
     }
     
     public static func registerFonts() {
-        fontNames.forEach { register(fontName: $0) }
+        fontNames.forEach { register(fileName: $0) }
     }
     
     static func registerFont(fileName: String) {
@@ -42,13 +42,13 @@ public struct FontLoader {
     
     
     
-//    private func url(fontName: String) -> URL? {
-//        return Bundle.module.url(forResource: fontName, withExtension: nil)
+//    private func url(fileName: String) -> URL? {
+//        return Bundle.module.url(forResource: "Symbols/\(fileName)", withExtension: nil)
 //    }
 #if os(iOS) || os(tvOS) || os(visionOS)
     static func register(fontName: String) {
-        guard let url = Bundle.module.url(forResource: fontName, withExtension: nil) else {
-            assertionFailure("Can not locate font \(fontName)")
+        guard let url = Bundle.module.url(forResource: fileName, withExtension: nil) else {
+            assertionFailure("Can not locate font \(fileName)")
             return
         }
         
@@ -56,15 +56,15 @@ public struct FontLoader {
         if !CTFontManagerRegisterFontsForURL(url as CFURL, .process,    &error) {
             if let error = error {
                 let description: CFString =     CFErrorCopyDescription(error    .takeUnretainedValue())
-                assertionFailure("Can not locate font \(fontName).  Reason \(description)")
+                assertionFailure("Can not locate font \(fileName).  Reason \(description)")
             } else {
-                assertionFailure("Can not register font \(fontName)")
+                assertionFailure("Can not register font \(fileName)")
             }
         }
     }
     
 #else
-    static func register(fontName: String) {}
+    static func register(fileName: String) {}
     #endif
     
     
