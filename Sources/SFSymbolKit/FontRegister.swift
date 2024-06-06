@@ -1,17 +1,9 @@
 //
-//  File.swift
-//  
-//
-//  Created by Dalton Alexandre on 6/5/24.
-//
-
-//
 //  FontRegister.swift
 //  FontRegister
-//
-//  Created by Arthur Sabintsev on 5/5/15.
+//  https://github.com/dl-alexandre/SFSymbolKit
+//  Created by Dalton Alexandre on 6/5/24.
 //  Copyright (c) 2015 Arthur Ariel Sabintsev. All rights reserved.
-//
 
 import CoreGraphics
 import CoreText

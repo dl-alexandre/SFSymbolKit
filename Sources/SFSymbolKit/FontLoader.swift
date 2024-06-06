@@ -7,10 +7,20 @@
 
 import CoreText
 import Foundation
+#if os(OSX)
+import AppKit
+#else
+import UIKit
+#endif
+
 
 public struct FontLoader {
     public static func loadFonts() {
-        fontNames.forEach { registerFont(fileName: $0) }
+        fontNames.forEach { register(fontName: $0) }
+    }
+    
+    public static func registerFonts() {
+        fontNames.forEach { register(fontName: $0) }
     }
     
     static func registerFont(fileName: String) {
@@ -23,10 +33,63 @@ public struct FontLoader {
         }
         
         var error: Unmanaged<CFError>?
+        
         if !CTFontManagerRegisterGraphicsFont(fontRef, &error) {
             print("Error registering font: \(error.debugDescription)")
         }
     }
+    
+    
+    
+    
+    private func url(fontName: String) -> URL? {
+        return Bundle.module.url(forResource: fontName, withExtension: nil)
+    }
+#if os(iOS) || os(tvOS) || os(visionOS)
+    static func register(fontName: String) {
+        guard let url = self.url(fontName: fontName) else {
+            assertionFailure("Can not locate font \(fontName)")
+            return
+        }
+        
+        var error: Unmanaged<CFError>?
+        if !CTFontManagerRegisterFontsForURL(url as CFURL, .process,    &error) {
+            if let error = error {
+                let description: CFString =     CFErrorCopyDescription(error    .takeUnretainedValue())
+                assertionFailure("Can not locate font \(fontName).  Reason \(description)")
+            } else {
+                assertionFailure("Can not register font \(fontName)")
+            }
+        }
+    }
+    
+#else
+    static func register(fontName: String) {}
+    #endif
+    
+    
+    func registerFontsFromBundle(named names: [String]) {
+        let bundle: Bundle = {
+#if SWIFT_PACKAGE
+            return Bundle.module
+#else
+            return Bundle.main
+#endif
+        }()
+        let fontURLs = names
+            .compactMap { bundle.url(forResource: $0, withExtension: nil) }
+        
+        CTFontManagerRegisterFontURLs(fontURLs as CFArray, .process, true) { errors, done in
+            // CTFontManager.h points out that the CFArray, if not empty, contains CFError values.
+            let errors = errors as! [CFError]
+            guard errors.isEmpty else {
+                preconditionFailure("Registering font failed: \(errors.map(\.localizedDescription))")
+            }
+            return true  // true: should continue; false: should stop
+        }
+    }
+    
+    
 }
 
 let fontNames = [
