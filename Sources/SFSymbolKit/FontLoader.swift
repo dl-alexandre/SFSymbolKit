@@ -42,12 +42,12 @@ public struct FontLoader {
     
     
     
-    private func url(fontName: String) -> URL? {
-        return Bundle.module.url(forResource: fontName, withExtension: nil)
-    }
+//    private func url(fontName: String) -> URL? {
+//        return Bundle.module.url(forResource: fontName, withExtension: nil)
+//    }
 #if os(iOS) || os(tvOS) || os(visionOS)
     static func register(fontName: String) {
-        guard let url = self.url(fontName: fontName) else {
+        guard let url = Bundle.module.url(forResource: fontName, withExtension: nil) else {
             assertionFailure("Can not locate font \(fontName)")
             return
         }
