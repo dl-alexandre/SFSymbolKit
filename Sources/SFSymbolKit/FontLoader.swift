@@ -13,6 +13,47 @@ import AppKit
 import UIKit
 #endif
 
+//func registerFontIfNeeded(_ fontName: String) {
+//    let fontURL = Bundle.main.url(forResource: fontName, withExtension: "ttf")
+//    guard let url = fontURL else {
+//        print("Font file not found")
+//        return
+//    }
+//    
+//    let fontDescriptor = CTFontDescriptorCreateWithFileURL(url as CFURL)
+//    guard let descriptor = fontDescriptor else {
+//        print("Error creating font descriptor")
+//        return
+//    }
+//    
+//    let fontFamilyName = CTFontDescriptorCopyAttribute(descriptor, .familyName) as? String
+//    guard let familyName = fontFamilyName else {
+//        print("Error getting font family name")
+//        return
+//    }
+//    
+//    let fontNames = UIFont.familyNames
+//    if !fontNames.contains(familyName) {
+//        do {
+//            try CTFontManagerRegisterFontsForURLs([url],
+//                                                  CTFontManagerScope.process,
+//                                                  nil)
+//            print("Font registered: \(fontName)")
+//        } catch {
+//            print("Error registering font: \(error)")
+//        }
+//    } else {
+//        print("Font already available: \(fontName)")
+//    }
+//}
+//
+//for fontName in fontNames {
+//    registerFontIfNeeded(fontName)
+//}
+//
+//extension Notification.Name {
+//    static let fontsChangedNotification = Notification.Name("fontsChangedNotification")
+//}
 
 public struct FontLoader {
     public static func loadFonts() {
@@ -47,6 +88,7 @@ public struct FontLoader {
 //    }
 #if os(iOS) || os(tvOS) || os(visionOS)
     static func register(fileName: String) {
+        
         guard let url = Bundle.module.url(forResource: "Symbols/\(fileName)", withExtension: nil) else {
             assertionFailure("Can not locate font \(fileName)")
             return
@@ -62,6 +104,26 @@ public struct FontLoader {
             }
         }
     }
+    
+//    func registerFontWithURL(_ fontURL: URL) -> Bool {
+//        var error: Unmanaged<CFError>?
+//        let fontURLs = [fontURL] as CFArray
+//        let registrationScope = CTFontManagerRegistrationScope.process
+//        
+//        let result = CTFontManagerRegisterFontURLs(fontURLs, registrationScope, true, &error)
+//        
+//        if result {
+//            print("Font registered successfully")
+//            return true
+//        } else {
+//            print("Error registering font: \(error?.takeRetainedValue() ?? "Unknown error")")
+//            return false
+//        }
+//    }
+    
+    
+   
+    
     
 #else
     static func register(fileName: String) {}
