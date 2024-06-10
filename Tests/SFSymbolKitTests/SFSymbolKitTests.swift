@@ -15,7 +15,8 @@ final class SFSymbolKitTests: XCTestCase {
             // Given
             /// The expected number of symbols that should be present in the plist
         let expectedFivePointOneSymbolsCount = 5648 /// SF Symbols 5.1
-        let SwiftSymbolCount = 5649 /// SF Symbols 5.1 + "swift"
+        let expectedFivePointOneSymbolsCountPlusSwift = 5649 /// SF Symbols 5.1 + "swift"
+        let SwiftSymbolCount = 6558 /// SF Symbols 6 + "swift"+ "swiftdata"
             // When
             /// The actual array of symbols returned by the `decodePList` function.
         let symbols = decodePList()
