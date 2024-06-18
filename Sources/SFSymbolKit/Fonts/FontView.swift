@@ -1,8 +1,8 @@
 //
 //  FontView.swift
-//  SymbolGrid
-//
-//  Created by Dalton Alexandre on 6/8/24. 􀫊
+//  SFSymbolKit
+//  https://github.com/dl-alexandre/SFSymbolKit
+//  See LICENSE for license information.
 //
 
 import SwiftUI

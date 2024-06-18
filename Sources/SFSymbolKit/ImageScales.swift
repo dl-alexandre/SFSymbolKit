@@ -1,8 +1,8 @@
 //
 //  ImageScales.swift
-//  
-//
-//  Created by Dalton on 6/17/24.
+//  SFSymbolKit
+//  https://github.com/dl-alexandre/SFSymbolKit
+//  See LICENSE for license information.
 //
 
 import SwiftUI
