@@ -58,7 +58,7 @@ public enum SymbolEffects: Int, CaseIterable {
     }
     
     /// Returns a random symbol effect.
-    public func random() -> SymbolEffects {
+    public func randomSymbolEffect() -> SymbolEffects {
         return SymbolEffects.allCases.randomElement() ?? .bounce
     }
 }
