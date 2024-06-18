@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "SFSymbolKit",
     platforms: [
-        .iOS(.v15),
+        .iOS(.v17),
         .macOS(.v14)
     ],
     products: [

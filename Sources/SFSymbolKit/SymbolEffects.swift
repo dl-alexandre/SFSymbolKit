@@ -5,8 +5,10 @@
 //  See LICENSE for license information.
 //
 
+import SwiftUI
 
 /// `SymbolEffects` is an enumeration that defines a list of symbol effects.
+@available(iOS 17.0, *)
 public enum SymbolEffects: Int, CaseIterable {
     /// Creates a gentle bouncing animation for the symbol.
     /// Useful for adding playful or attention-grabbing behavior.
@@ -19,7 +21,7 @@ public enum SymbolEffects: Int, CaseIterable {
     case rotate
     /// Simulates a breathing effect by subtly scaling the symbol up and down.
     /// Creates a calming or lifelike animation.
-    case breath
+    case breathe
     /// Alternates between slightly larger and slightly smaller sizes.
     /// Useful for drawing attention or indicating activity.
     case pulse
@@ -33,8 +35,8 @@ public enum SymbolEffects: Int, CaseIterable {
             return "Wiggle"
         case .rotate:
             return "Rotate"
-        case .breath:
-            return "Breath"
+        case .breathe:
+            return "Breathe"
         case .pulse:
             return "Pulse"
         }
@@ -42,7 +44,8 @@ public enum SymbolEffects: Int, CaseIterable {
     
     /// A computed property that returns the same effect case.
     /// This could be used to return a specific variant type from a function or method.
-    var variant: SymbolEffects {
+    @available(iOS 18.0, *)
+    var effect: any SymbolEffect {
         switch self {
         case .bounce:
             return .bounce
@@ -50,15 +53,16 @@ public enum SymbolEffects: Int, CaseIterable {
             return .wiggle
         case .rotate:
             return .rotate
-        case .breath:
-            return .breath
+        case .breathe:
+            return .breathe
         case .pulse:
             return .pulse
         }
     }
-    
-    /// Returns a random symbol effect.
-    public func randomSymbolEffect() -> SymbolEffects {
-        return SymbolEffects.allCases.randomElement() ?? .bounce
-    }
+}
+
+/// Returns a random symbol effect.
+@available(iOS 17.0, *)
+public func randomSymbolEffect() -> any SymbolEffect {
+    return SymbolEffects.allCases.randomElement()! as! (any SymbolEffect)
 }
