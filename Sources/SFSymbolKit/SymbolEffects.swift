@@ -44,7 +44,7 @@ public enum SymbolEffects: Int, CaseIterable {
     
     /// A computed property that returns the same effect case.
     /// This could be used to return a specific variant type from a function or method.
-    @available(iOS 18.0, *)
+    @available(iOS 18.0, macOS 15.0, *)
     var effect: any SymbolEffect {
         switch self {
         case .bounce:
