@@ -62,7 +62,6 @@ public enum SymbolEffects: Int, CaseIterable {
 }
 
 /// Returns a random symbol effect.
-@available(iOS 17.0, *)
 public func randomSymbolEffect() -> any SymbolEffect {
     return SymbolEffects.allCases.randomElement()! as! (any SymbolEffect)
 }
