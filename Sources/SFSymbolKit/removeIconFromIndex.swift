@@ -7,7 +7,7 @@
 
 import CoreSpotlight
 
-func removeIconFromIndex(_ item: String, _ domainID: String) {
+public func removeIconFromIndex(_ item: String, _ domainID: String) {
     let secureIndex = CSSearchableIndex(name: domainID, protectionClass: .complete)
     
     secureIndex.deleteSearchableItems(withIdentifiers: [item]) { error in

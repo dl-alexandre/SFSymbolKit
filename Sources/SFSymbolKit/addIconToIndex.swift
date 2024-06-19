@@ -7,7 +7,7 @@
 
 import CoreSpotlight
 
-func addIconToIndex(_ item: String, _ domainID: String) {
+public func addIconToIndex(_ item: String, _ domainID: String) {
     let attributeSet = CSSearchableItemAttributeSet(contentType: UTType.text)
     attributeSet.title = item
     
