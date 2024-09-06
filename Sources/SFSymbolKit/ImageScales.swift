@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
-    /// `ImageScales` is an enumeration that defines a list of SF Symbol Image Scales.
+/// `ImageScales` is an enumeration that defines a list of SF Symbol Image Scales.
 public enum ImageScales: Int, CaseIterable {
     case small, medium, large
-    
+
     /// Provides a human-readable name for each Image Scale.
     public var name: String {
         switch self {

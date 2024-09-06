@@ -9,7 +9,7 @@ import CoreSpotlight
 
 public func removeIconFromIndex(_ item: String, _ domainID: String) {
     let secureIndex = CSSearchableIndex(name: domainID, protectionClass: .complete)
-    
+
     secureIndex.deleteSearchableItems(withIdentifiers: [item]) { error in
         if let error = error {
             print("Error indexing item: \(error.localizedDescription)")

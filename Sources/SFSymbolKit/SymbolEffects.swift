@@ -25,7 +25,7 @@ public enum SymbolEffects: Int, CaseIterable {
     /// Alternates between slightly larger and slightly smaller sizes.
     /// Useful for drawing attention or indicating activity.
     case pulse
-    
+
     /// A computed property that returns the name of the symbol effect as a `String`.
     var name: String {
         switch self {
@@ -41,7 +41,7 @@ public enum SymbolEffects: Int, CaseIterable {
             return "Pulse"
         }
     }
-    
+
     /// A computed property that returns the same effect case.
     /// This could be used to return a specific variant type from a function or method.
     @available(iOS 18.0, macOS 15.0, *)
@@ -61,7 +61,9 @@ public enum SymbolEffects: Int, CaseIterable {
     }
 }
 
+// swiftlint:disable force_cast
 /// Returns a random symbol effect.
 public func randomSymbolEffect() -> any SymbolEffect {
     return SymbolEffects.allCases.randomElement()! as! (any SymbolEffect)
 }
+// swiftlint:enable force_cast
