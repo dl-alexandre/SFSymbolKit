@@ -8,11 +8,17 @@ import SwiftUI
 
 /// `SymbolVariants` is an enumeration that defines a list of symbol shapes and their variants.
 public enum SymbolVariants: Int, CaseIterable {
+    /// A variant that encapsulates the symbol in a circle.
     case circle
+    /// A variant that encapsulates the symbol in a square.
     case square
+    /// A variant that encapsulates the symbol in a rectangle.
     case rectangle
+    /// A filled version of the variant.
     case fill
+    /// A variant that draws a slash through the symbol.
     case slash
+    /// No variant for a symbol.
     case none
 
     /// A computed property that returns the name of the symbol variant as a `String`.

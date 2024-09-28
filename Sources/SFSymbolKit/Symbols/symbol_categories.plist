@@ -26641,7 +26641,11 @@
 		<string>indices</string>
 		<string>multicolor</string>
 	</array>
-	<key>safari.fill</key>
+	<key>safari</key>
+	<array>
+		<string>multicolor</string>
+	</array>
+	<key>safari.fill - 2</key>
 	<array>
 		<string>multicolor</string>
 	</array>

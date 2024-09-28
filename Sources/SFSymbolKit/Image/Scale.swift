@@ -1,13 +1,15 @@
 //
-//  ImageScales.swift
+//  Scale.swift
 //  SFSymbolKit
 //  https://github.com/dl-alexandre/SFSymbolKit
 //  See LICENSE for license information.
 //
 
 import SwiftUI
-/// `ImageScales` is an enumeration that defines a list of SF Symbol Image Scales.
-public enum ImageScales: Int, CaseIterable {
+/// `Scale` is an enumeration that defines a list of SF Symbol Image Scales.
+public enum Scale: Int, CaseIterable {
+
+    /// Define cases for each Image Scale.
     case small, medium, large
 
     /// Provides a human-readable name for each Image Scale.

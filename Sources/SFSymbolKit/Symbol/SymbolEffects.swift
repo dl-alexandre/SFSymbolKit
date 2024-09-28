@@ -110,9 +110,10 @@ public enum SymbolEffects: Int, CaseIterable {
     }
 }
 
-// swiftlint:disable force_cast
 /// Returns a random symbol effect.
-public func randomSymbolEffect() -> any SymbolEffect {
-    return SymbolEffects.allCases.randomElement()! as! (any SymbolEffect)
+public func randomSymbolEffect() -> (any SymbolEffect)? {
+    guard let randomEffect = SymbolEffects.allCases.randomElement() as? (any SymbolEffect) else {
+        return nil
+    }
+    return randomEffect
 }
-// swiftlint:enable force_cast

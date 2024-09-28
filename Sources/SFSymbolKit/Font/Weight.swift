@@ -1,5 +1,5 @@
 //
-//  FontWeights.swift
+//  Weight.swift
 //  SFSymbolKit
 //  https://github.com/dl-alexandre/SFSymbolKit
 //  See LICENSE for license information.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-/// `FontWeights` is an enumeration that defines a list of font weight styles.
-public enum FontWeights: Int, CaseIterable {
+/// `Weight` is an enumeration that defines a list of Font Weight styles.
+public enum Weight: Int, CaseIterable {
 
-    /// Define cases for each font weight style.
+    /// Define cases for each Font Weight.
     case black, heavy, bold, semibold, medium, regular, light, thin, ultraLight
 
-    /// A computed property that returns the name of the font weight as a `String`.
+    /// A computed property that returns the name of the Font Weight as a `String`.
     public var name: String {
         switch self {
         case .black: return "Black"
@@ -27,7 +27,7 @@ public enum FontWeights: Int, CaseIterable {
         case .ultraLight: return "UltraLight"
         }
     }
-    /// A computed property that returns the corresponding `Font.Weight` value for each font weight style.
+    /// A computed property that returns the corresponding `Weight` value for each Font Weight.
     public var weight: Font.Weight {
         switch self {
         case .black: return .black

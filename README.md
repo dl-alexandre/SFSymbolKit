@@ -9,6 +9,7 @@
     <a href="https://twitter.com/d_creatio">
         <img src="https://img.shields.io/badge/Contact-@d_creatio-95a5a6.svg?style=flat" alt="Twitter: @d_creatio" />
     </a>
+    
 </p>
 
 Enhance your iOS development with SF Symbols. `SFSymbolKit` provides a seamless way to integrate Apple's SF Symbol library into your projects, ensuring compatibility with iOS 9 and above.
@@ -37,4 +38,4 @@ dependencies: [
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 ### License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT [License](https://github.com/dl-alexandre/SFSymbolKit/blob/main/LICENSE).
