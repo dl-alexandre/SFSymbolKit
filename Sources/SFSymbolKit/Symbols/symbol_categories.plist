@@ -3877,6 +3877,17 @@
 		<string>human</string>
 		<string>multicolor</string>
 	</array>
+	<key>air.car.side</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>air.car.side.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>air.conditioner.horizontal</key>
 	<array>
 		<string>home</string>
@@ -3897,6 +3908,28 @@
 		<string>home</string>
 		<string>objectsandtools</string>
 	</array>
+	<key>air.convertible.side</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>air.convertible.side.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>air.pickup.side</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>air.pickup.side.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>air.purifier</key>
 	<array>
 		<string>home</string>
@@ -3906,6 +3939,17 @@
 	<array>
 		<string>home</string>
 		<string>objectsandtools</string>
+	</array>
+	<key>air.suv.side</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>air.suv.side.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
 	</array>
 	<key>airplane</key>
 	<array>
@@ -4310,6 +4354,10 @@
 	<array>
 		<string>shapes</string>
 	</array>
+	<key>appclip</key>
+	<array>
+		<string>custom</string>
+	</array>
 	<key>apple.haptics.and.exclamationmark.triangle</key>
 	<array>
 		<string>multicolor</string>
@@ -4321,6 +4369,20 @@
 	</array>
 	<key>apple.haptics.and.music.note.slash</key>
 	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>apple.image.playground</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>apple.image.playground.fill</key>
+	<array>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>apple.intelligence</key>
+	<array>
+		<string>multicolor</string>
 		<string>whatsnew</string>
 	</array>
 	<key>apple.meditate</key>
@@ -4350,6 +4412,14 @@
 	<array>
 		<string>health</string>
 		<string>nature</string>
+	</array>
+	<key>applescript</key>
+	<array>
+		<string>custom</string>
+	</array>
+	<key>applescript.fill</key>
+	<array>
+		<string>custom</string>
 	</array>
 	<key>apple.terminal</key>
 	<array>
@@ -4387,6 +4457,12 @@
 	<array>
 		<string>devices</string>
 	</array>
+	<key>applepencil.doubletap</key>
+	<array>
+		<string>devices</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>applepencil.gen1</key>
 	<array>
 		<string>devices</string>
@@ -4394,6 +4470,17 @@
 	<key>applepencil.gen2</key>
 	<array>
 		<string>devices</string>
+	</array>
+	<key>applepencil.hover</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>applepencil.squeeze</key>
+	<array>
+		<string>devices</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
 	</array>
 	<key>applepencil.tip</key>
 	<array>
@@ -6828,6 +6915,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>australiandollarsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>australiandollarsign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>australiandollarsign.square</key>
 	<array>
 		<string>commerce</string>
@@ -6881,6 +6979,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>australsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>australsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>australsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -7193,6 +7302,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>bahtsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>bahtsign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>bahtsign.square</key>
 	<array>
 		<string>commerce</string>
@@ -7247,6 +7367,11 @@
 	<key>barometer</key>
 	<array>
 		<string>objectsandtools</string>
+	</array>
+	<key>base.unit</key>
+	<array>
+		<string>maps</string>
+		<string>whatsnew</string>
 	</array>
 	<key>baseball</key>
 	<array>
@@ -7459,6 +7584,14 @@
 		<string>devices</string>
 		<string>objectsandtools</string>
 	</array>
+	<key>beats.pill</key>
+	<array>
+		<string>devices</string>
+	</array>
+	<key>beats.pill.fill</key>
+	<array>
+		<string>devices</string>
+	</array>
 	<key>beats.powerbeats</key>
 	<array>
 		<string>devices</string>
@@ -7500,6 +7633,26 @@
 		<string>devices</string>
 	</array>
 	<key>beats.powerbeats3.right</key>
+	<array>
+		<string>devices</string>
+	</array>
+	<key>beats.solobuds</key>
+	<array>
+		<string>devices</string>
+	</array>
+	<key>beats.solobuds.chargingcase</key>
+	<array>
+		<string>devices</string>
+	</array>
+	<key>beats.solobuds.chargingcase.fill</key>
+	<array>
+		<string>devices</string>
+	</array>
+	<key>beats.solobuds.left</key>
+	<array>
+		<string>devices</string>
+	</array>
+	<key>beats.solobuds.right</key>
 	<array>
 		<string>devices</string>
 	</array>
@@ -7677,6 +7830,11 @@
 		<string>multicolor</string>
 		<string>objectsandtools</string>
 	</array>
+	<key>beziercurve</key>
+	<array>
+		<string>editing</string>
+		<string>whatsnew</string>
+	</array>
 	<key>bicycle</key>
 	<array>
 		<string>maps</string>
@@ -7781,6 +7939,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>bitcoinsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>bitcoinsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>bitcoinsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -8218,6 +8387,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>brazilianrealsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>brazilianrealsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>brazilianrealsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -8990,6 +9170,11 @@
 		<string>automotive</string>
 		<string>multicolor</string>
 	</array>
+	<key>car.rear.and.tire.marks.off</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>car.rear.and.tire.marks.slash</key>
 	<array>
 		<string>automotive</string>
@@ -9019,6 +9204,71 @@
 	<key>car.rear.road.lane.dashed</key>
 	<array>
 		<string>automotive</string>
+	</array>
+	<key>car.rear.road.lane.distance.1</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.1.and.gauge.open.with.lines.needle.67percent.and.arrowtriangle</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.2</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.2.and.gauge.open.with.lines.needle.67percent.and.arrowtriangle</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.3</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.3.and.gauge.open.with.lines.needle.67percent.and.arrowtriangle</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.4</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.4.and.gauge.open.with.lines.needle.67percent.and.arrowtriangle</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.5</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.distance.5.and.gauge.open.with.lines.needle.67percent.and.arrowtriangle</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.rear.road.lane.off</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
 	</array>
 	<key>car.rear.road.lane.wave.up</key>
 	<array>
@@ -9119,6 +9369,16 @@
 		<string>automotive</string>
 		<string>multicolor</string>
 	</array>
+	<key>car.side.hill.descent.control</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.side.hill.descent.control.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>car.side.hill.down</key>
 	<array>
 		<string>automotive</string>
@@ -9163,10 +9423,25 @@
 	<array>
 		<string>automotive</string>
 	</array>
+	<key>car.side.rear.and.exclamationmark.and.car.side.front.off</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>car.side.rear.and.wave.3.and.car.side.front</key>
 	<array>
 		<string>automotive</string>
 		<string>variablecolor</string>
+	</array>
+	<key>car.side.rear.crop.trunk.partition</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.side.rear.crop.trunk.partition.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
 	</array>
 	<key>car.side.rear.open</key>
 	<array>
@@ -9194,6 +9469,26 @@
 		<string>whatsnew</string>
 	</array>
 	<key>car.side.rear.tow.hitch.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.side.roof.cargo.carrier</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.side.roof.cargo.carrier.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.side.roof.cargo.carrier.slash</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.side.roof.cargo.carrier.slash.fill</key>
 	<array>
 		<string>automotive</string>
 		<string>whatsnew</string>
@@ -9554,6 +9849,26 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>car.top.video.rear.left</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.top.video.rear.left.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.top.video.rear.right</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>car.top.video.rear.right.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>car.window.left</key>
 	<array>
 		<string>automotive</string>
@@ -9793,6 +10108,34 @@
 		<string>commerce</string>
 		<string>objectsandtools</string>
 	</array>
+	<key>cart.badge.clock</key>
+	<array>
+		<string>commerce</string>
+		<string>multicolor</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
+	<key>cart.badge.clock.fill</key>
+	<array>
+		<string>commerce</string>
+		<string>multicolor</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
+	<key>cart.badge.clock.fill.rtl</key>
+	<array>
+		<string>commerce</string>
+		<string>multicolor</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
+	<key>cart.badge.clock.rtl</key>
+	<array>
+		<string>commerce</string>
+		<string>multicolor</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
 	<key>cart.badge.minus</key>
 	<array>
 		<string>commerce</string>
@@ -9942,6 +10285,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>cedisign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>cedisign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>cedisign.square</key>
 	<array>
 		<string>commerce</string>
@@ -10006,6 +10360,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>centsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>centsign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>centsign.square</key>
 	<array>
 		<string>commerce</string>
@@ -10054,6 +10419,11 @@
 	<key>character.ar</key>
 	<array>
 		<string>textformatting</string>
+	</array>
+	<key>character.bn</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>character.book.closed</key>
 	<array>
@@ -10308,6 +10678,11 @@
 		<string>accessibility</string>
 		<string>textformatting</string>
 	</array>
+	<key>character.gu</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>character.he</key>
 	<array>
 		<string>textformatting</string>
@@ -10319,6 +10694,11 @@
 	<key>character.ja</key>
 	<array>
 		<string>textformatting</string>
+	</array>
+	<key>character.kn</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>character.ko</key>
 	<array>
@@ -10364,9 +10744,43 @@
 		<string>accessibility</string>
 		<string>textformatting</string>
 	</array>
+	<key>character.ml</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>character.mni</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>character.mr</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>character.or</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>character.pa</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>character.phonetic</key>
 	<array>
 		<string>textformatting</string>
+	</array>
+	<key>character.sat</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>character.si</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>character.square</key>
 	<array>
@@ -10459,6 +10873,16 @@
 	<key>character.sutton</key>
 	<array>
 		<string>textformatting</string>
+	</array>
+	<key>character.ta</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>character.te</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>character.textbox</key>
 	<array>
@@ -10566,6 +10990,11 @@
 		<string>multicolor</string>
 		<string>variablecolor</string>
 	</array>
+	<key>chart.bar.yaxis</key>
+	<array>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>chart.dots.scatter</key>
 	<array>
 		<string>variablecolor</string>
@@ -10577,6 +11006,18 @@
 	<key>chart.line.flattrend.xyaxis.circle.fill</key>
 	<array>
 		<string>multicolor</string>
+	</array>
+	<key>chart.line.text.clipboard</key>
+	<array>
+		<string>health</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
+	<key>chart.line.text.clipboard.fill</key>
+	<array>
+		<string>health</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
 	</array>
 	<key>chart.line.uptrend.xyaxis.circle.fill</key>
 	<array>
@@ -10722,6 +11163,22 @@
 	<key>checkmark.seal.fill</key>
 	<array>
 		<string>privacyandsecurity</string>
+	</array>
+	<key>checkmark.seal.text.page</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>checkmark.seal.text.page.fill</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>checkmark.seal.text.page.fill.rtl</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>checkmark.seal.text.page.rtl</key>
+	<array>
+		<string>whatsnew</string>
 	</array>
 	<key>checkmark.shield</key>
 	<array>
@@ -11118,6 +11575,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>chineseyuanrenminbisign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>chineseyuanrenminbisign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>chineseyuanrenminbisign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -11917,6 +12385,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>coloncurrencysign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>coloncurrencysign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>coloncurrencysign.square</key>
 	<array>
 		<string>commerce</string>
@@ -12104,6 +12583,16 @@
 		<string>whatsnew</string>
 	</array>
 	<key>convertible.side.front.open.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>convertible.side.hill.descent.control</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>convertible.side.hill.descent.control.fill</key>
 	<array>
 		<string>automotive</string>
 		<string>whatsnew</string>
@@ -12345,6 +12834,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>cruzeirosign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>cruzeirosign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>cruzeirosign.square</key>
 	<array>
 		<string>commerce</string>
@@ -12363,6 +12863,16 @@
 	<key>cube.fill</key>
 	<array>
 		<string>objectsandtools</string>
+	</array>
+	<key>cup.and.heat.waves</key>
+	<array>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
+	<key>cup.and.heat.waves.fill</key>
+	<array>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
 	</array>
 	<key>cup.and.saucer</key>
 	<array>
@@ -12488,6 +12998,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>danishkronesign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>danishkronesign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>danishkronesign.square</key>
 	<array>
 		<string>commerce</string>
@@ -12514,7 +13035,7 @@
 		<string>weather</string>
 		<string>whatsnew</string>
 	</array>
-	<key>degreesign.farenheit</key>
+	<key>degreesign.fahrenheit</key>
 	<array>
 		<string>weather</string>
 		<string>whatsnew</string>
@@ -13044,6 +13565,19 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>dollarsign.ring</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>whatsnew</string>
+	</array>
+	<key>dollarsign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>dollarsign.square</key>
 	<array>
 		<string>commerce</string>
@@ -13097,6 +13631,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>dongsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>dongsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>dongsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -13239,6 +13784,10 @@
 	<array>
 		<string>connectivity</string>
 		<string>variablecolor</string>
+	</array>
+	<key>dot.scope</key>
+	<array>
+		<string>cameraandphotos</string>
 	</array>
 	<key>dot.scope.display</key>
 	<array>
@@ -13576,6 +14125,16 @@
 	<array>
 		<string>automotive</string>
 	</array>
+	<key>engine.emission.and.exclamationmark</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>engine.emission.and.filter</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>entry.lever.keypad</key>
 	<array>
 		<string>home</string>
@@ -13785,6 +14344,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>eurosign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>eurosign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>eurosign.square</key>
 	<array>
 		<string>commerce</string>
@@ -13838,6 +14408,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>eurozonesign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>eurozonesign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>eurozonesign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -17073,6 +17654,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>florinsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>florinsign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>florinsign.square</key>
 	<array>
 		<string>commerce</string>
@@ -17093,6 +17685,12 @@
 	<key>fluid.brakesignal</key>
 	<array>
 		<string>automotive</string>
+	</array>
+	<key>fluid.coolant</key>
+	<array>
+		<string>automotive</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
 	</array>
 	<key>fluid.transmission</key>
 	<array>
@@ -17305,6 +17903,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>francsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>francsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>francsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -17825,6 +18434,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>guaranisign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>guaranisign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>guaranisign.square</key>
 	<array>
 		<string>commerce</string>
@@ -18089,6 +18709,18 @@
 	<key>hand.raised.square.on.square.fill</key>
 	<array>
 		<string>privacyandsecurity</string>
+	</array>
+	<key>hand.rays</key>
+	<array>
+		<string>accessibility</string>
+		<string>human</string>
+		<string>whatsnew</string>
+	</array>
+	<key>hand.rays.fill</key>
+	<array>
+		<string>accessibility</string>
+		<string>human</string>
+		<string>whatsnew</string>
 	</array>
 	<key>hand.tap</key>
 	<array>
@@ -19087,6 +19719,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>hryvniasign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>hryvniasign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>hryvniasign.square</key>
 	<array>
 		<string>commerce</string>
@@ -19275,6 +19918,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>indianrupeesign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>indianrupeesign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>indianrupeesign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -19513,6 +20167,16 @@
 		<string>devices</string>
 		<string>multicolor</string>
 	</array>
+	<key>ipad.gen1.landscape.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>ipad.gen1.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
 	<key>ipad.gen2</key>
 	<array>
 		<string>devices</string>
@@ -19552,6 +20216,16 @@
 	<array>
 		<string>devices</string>
 		<string>multicolor</string>
+	</array>
+	<key>ipad.gen2.landscape.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
+	<key>ipad.gen2.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
 	</array>
 	<key>ipad.landscape</key>
 	<array>
@@ -19705,6 +20379,11 @@
 	<array>
 		<string>devices</string>
 	</array>
+	<key>iphone.gen1.landscape.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
 	<key>iphone.gen1.motion</key>
 	<array>
 		<string>devices</string>
@@ -19782,6 +20461,11 @@
 	<array>
 		<string>devices</string>
 	</array>
+	<key>iphone.gen2.landscape.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
 	<key>iphone.gen2.motion</key>
 	<array>
 		<string>devices</string>
@@ -19858,6 +20542,11 @@
 	<key>iphone.gen3.landscape</key>
 	<array>
 		<string>devices</string>
+	</array>
+	<key>iphone.gen3.landscape.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
 	</array>
 	<key>iphone.gen3.motion</key>
 	<array>
@@ -20063,6 +20752,47 @@
 		<string>objectsandtools</string>
 		<string>whatsnew</string>
 	</array>
+	<key>key.car.radiowaves.forward</key>
+	<array>
+		<string>automotive</string>
+		<string>objectsandtools</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>key.car.radiowaves.forward.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>objectsandtools</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>key.car.radiowaves.forward.fill.rtl</key>
+	<array>
+		<string>automotive</string>
+		<string>objectsandtools</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>key.car.radiowaves.forward.rtl</key>
+	<array>
+		<string>automotive</string>
+		<string>objectsandtools</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>key.card</key>
+	<array>
+		<string>automotive</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
+	<key>key.card.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
 	<key>key.fill</key>
 	<array>
 		<string>automotive</string>
@@ -20248,6 +20978,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>kipsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>kipsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>kipsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -20573,6 +21314,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>larisign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>larisign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>larisign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -21120,6 +21872,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>lirasign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>lirasign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>lirasign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -21722,6 +22485,11 @@
 	<array>
 		<string>devices</string>
 	</array>
+	<key>macbook.and.applewatch</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
+	</array>
 	<key>macbook.and.ipad</key>
 	<array>
 		<string>devices</string>
@@ -21741,6 +22509,11 @@
 	<key>macbook.gen2</key>
 	<array>
 		<string>devices</string>
+	</array>
+	<key>macbook.slash</key>
+	<array>
+		<string>devices</string>
+		<string>whatsnew</string>
 	</array>
 	<key>macmini</key>
 	<array>
@@ -21882,6 +22655,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>malaysianringgitsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>malaysianringgitsign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>malaysianringgitsign.square</key>
 	<array>
 		<string>commerce</string>
@@ -21937,6 +22721,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>manatsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>manatsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>manatsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -22040,6 +22835,16 @@
 		<string>maps</string>
 		<string>multicolor</string>
 		<string>objectsandtools</string>
+	</array>
+	<key>matter.logo</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>mecca</key>
+	<array>
+		<string>automotive</string>
+		<string>maps</string>
+		<string>whatsnew</string>
 	</array>
 	<key>medal</key>
 	<array>
@@ -22356,6 +23161,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>millsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>millsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>millsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -22921,6 +23737,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>nairasign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>nairasign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>nairasign.square</key>
 	<array>
 		<string>commerce</string>
@@ -23006,6 +23833,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>norwegiankronesign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>norwegiankronesign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>norwegiankronesign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -23453,6 +24291,12 @@
 	<array>
 		<string>automotive</string>
 		<string>multicolor</string>
+	</array>
+	<key>parkingsign.radiowaves.down.right.off</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
 	</array>
 	<key>parkingsign.radiowaves.left.and.right</key>
 	<array>
@@ -23936,6 +24780,7 @@
 	<key>person.crop.circle.badge</key>
 	<array>
 		<string>human</string>
+		<string>multicolor</string>
 	</array>
 	<key>person.crop.circle.badge.checkmark</key>
 	<array>
@@ -23965,6 +24810,7 @@
 	<key>person.crop.circle.badge.fill</key>
 	<array>
 		<string>human</string>
+		<string>multicolor</string>
 	</array>
 	<key>person.crop.circle.badge.minus</key>
 	<array>
@@ -24242,6 +25088,12 @@
 		<string>multicolor</string>
 		<string>objectsandtools</string>
 	</array>
+	<key>personalhotspot.slash</key>
+	<array>
+		<string>connectivity</string>
+		<string>objectsandtools</string>
+		<string>whatsnew</string>
+	</array>
 	<key>perspective</key>
 	<array>
 		<string>cameraandphotos</string>
@@ -24293,6 +25145,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>peruviansolessign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>peruviansolessign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>peruviansolessign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -24360,6 +25223,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>pesetasign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>pesetasign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>pesetasign.square</key>
 	<array>
 		<string>commerce</string>
@@ -24413,6 +25287,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>pesosign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>pesosign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>pesosign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -25172,6 +26057,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>polishzlotysign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>polishzlotysign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>polishzlotysign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -26095,6 +26991,10 @@
 	<array>
 		<string>editing</string>
 	</array>
+	<key>rectangle.expand.diagonal</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
 	<key>rectangle.fill</key>
 	<array>
 		<string>shapes</string>
@@ -26520,6 +27420,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>rublesign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>rublesign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>rublesign.square</key>
 	<array>
 		<string>commerce</string>
@@ -26612,6 +27523,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>rupeesign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>rupeesign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>rupeesign.square</key>
 	<array>
 		<string>commerce</string>
@@ -26643,9 +27565,9 @@
 	</array>
 	<key>safari</key>
 	<array>
-		<string>multicolor</string>
+		<string>custom</string>
 	</array>
-	<key>safari.fill - 2</key>
+	<key>safari.fill</key>
 	<array>
 		<string>multicolor</string>
 	</array>
@@ -26810,7 +27732,7 @@
 		<string>human</string>
 		<string>multicolor</string>
 	</array>
-	<key>sharedwithyou.circle.slash</key>
+	<key>sharedwithyou.slash</key>
 	<array>
 		<string>human</string>
 	</array>
@@ -26869,6 +27791,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>shekelsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>shekelsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>shekelsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -27217,6 +28150,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>singaporedollarsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>singaporedollarsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>singaporedollarsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -27777,6 +28721,16 @@
 	<array>
 		<string>cameraandphotos</string>
 	</array>
+	<key>square.and.arrow.down.badge.clock</key>
+	<array>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>square.and.arrow.down.badge.clock.fill</key>
+	<array>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>square.and.arrow.up.badge.clock</key>
 	<array>
 		<string>multicolor</string>
@@ -27964,6 +28918,11 @@
 	<array>
 		<string>multicolor</string>
 	</array>
+	<key>squareroot</key>
+	<array>
+		<string>math</string>
+		<string>whatsnew</string>
+	</array>
 	<key>stairs</key>
 	<array>
 		<string>home</string>
@@ -28145,6 +29104,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>sterlingsign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>sterlingsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>sterlingsign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -28369,6 +29339,10 @@
 		<string>nature</string>
 		<string>weather</string>
 	</array>
+	<key>sun.lefthalf.filled</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
 	<key>sun.max</key>
 	<array>
 		<string>keyboard</string>
@@ -28440,6 +29414,10 @@
 		<string>multicolor</string>
 		<string>nature</string>
 		<string>weather</string>
+	</array>
+	<key>sun.righthalf.filled</key>
+	<array>
+		<string>whatsnew</string>
 	</array>
 	<key>sun.snow</key>
 	<array>
@@ -28526,6 +29504,11 @@
 		<string>fitness</string>
 		<string>objectsandtools</string>
 	</array>
+	<key>suspension.shock</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>suv.side</key>
 	<array>
 		<string>automotive</string>
@@ -28604,6 +29587,16 @@
 		<string>automotive</string>
 		<string>multicolor</string>
 	</array>
+	<key>suv.side.hill.descent.control</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>suv.side.hill.descent.control.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>suv.side.hill.down</key>
 	<array>
 		<string>automotive</string>
@@ -28656,6 +29649,26 @@
 		<string>automotive</string>
 		<string>multicolor</string>
 	</array>
+	<key>suv.side.roof.cargo.carrier</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>suv.side.roof.cargo.carrier.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>suv.side.roof.cargo.carrier.slash</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>suv.side.roof.cargo.carrier.slash.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>swatchpalette</key>
 	<array>
 		<string>objectsandtools</string>
@@ -28706,6 +29719,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>swedishkronasign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>swedishkronasign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>swedishkronasign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -28955,6 +29979,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>tengesign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>tengesign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>tengesign.square</key>
 	<array>
 		<string>commerce</string>
@@ -29110,6 +30145,30 @@
 	<array>
 		<string>communication</string>
 	</array>
+	<key>text.bubble.badge.clock</key>
+	<array>
+		<string>communication</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>text.bubble.badge.clock.fill</key>
+	<array>
+		<string>communication</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>text.bubble.badge.clock.fill.rtl</key>
+	<array>
+		<string>communication</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>text.bubble.badge.clock.rtl</key>
+	<array>
+		<string>communication</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>text.bubble.fill</key>
 	<array>
 		<string>communication</string>
@@ -29163,6 +30222,11 @@
 	<array>
 		<string>media</string>
 	</array>
+	<key>text.line.magnify</key>
+	<array>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>text.magnifyingglass</key>
 	<array>
 		<string>objectsandtools</string>
@@ -29174,6 +30238,22 @@
 	<key>text.page.badge.magnifyingglass</key>
 	<array>
 		<string>objectsandtools</string>
+	</array>
+	<key>text.page.slash</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>text.page.slash.fill</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>text.page.slash.fill.rtl</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>text.page.slash.rtl</key>
+	<array>
+		<string>whatsnew</string>
 	</array>
 	<key>text.redaction</key>
 	<array>
@@ -29494,6 +30574,18 @@
 		<string>accessibility</string>
 		<string>textformatting</string>
 	</array>
+	<key>textformat.size.bn</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.gu</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>textformat.size.he</key>
 	<array>
 		<string>accessibility</string>
@@ -29508,6 +30600,12 @@
 	<array>
 		<string>accessibility</string>
 		<string>textformatting</string>
+	</array>
+	<key>textformat.size.kn</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>textformat.size.ko</key>
 	<array>
@@ -29524,6 +30622,18 @@
 		<string>accessibility</string>
 		<string>textformatting</string>
 	</array>
+	<key>textformat.size.larger.bn</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.gu</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>textformat.size.larger.he</key>
 	<array>
 		<string>accessibility</string>
@@ -29539,10 +30649,70 @@
 		<string>accessibility</string>
 		<string>textformatting</string>
 	</array>
+	<key>textformat.size.larger.kn</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>textformat.size.larger.ko</key>
 	<array>
 		<string>accessibility</string>
 		<string>textformatting</string>
+	</array>
+	<key>textformat.size.larger.ml</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.mni</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.mr</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.or</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.pa</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.sat</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.si</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.ta</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.larger.te</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>textformat.size.larger.th</key>
 	<array>
@@ -29554,6 +30724,48 @@
 		<string>accessibility</string>
 		<string>textformatting</string>
 	</array>
+	<key>textformat.size.ml</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.mni</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.mr</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.or</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.pa</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.sat</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.si</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>textformat.size.smaller</key>
 	<array>
 		<string>accessibility</string>
@@ -29563,6 +30775,18 @@
 	<array>
 		<string>accessibility</string>
 		<string>textformatting</string>
+	</array>
+	<key>textformat.size.smaller.bn</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.gu</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>textformat.size.smaller.he</key>
 	<array>
@@ -29579,10 +30803,70 @@
 		<string>accessibility</string>
 		<string>textformatting</string>
 	</array>
+	<key>textformat.size.smaller.kn</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
 	<key>textformat.size.smaller.ko</key>
 	<array>
 		<string>accessibility</string>
 		<string>textformatting</string>
+	</array>
+	<key>textformat.size.smaller.ml</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.mni</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.mr</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.or</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.pa</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.sat</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.si</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.ta</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.smaller.te</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>textformat.size.smaller.th</key>
 	<array>
@@ -29593,6 +30877,18 @@
 	<array>
 		<string>accessibility</string>
 		<string>textformatting</string>
+	</array>
+	<key>textformat.size.ta</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
+	</array>
+	<key>textformat.size.te</key>
+	<array>
+		<string>accessibility</string>
+		<string>textformatting</string>
+		<string>whatsnew</string>
 	</array>
 	<key>textformat.size.th</key>
 	<array>
@@ -29929,6 +31225,26 @@
 		<string>multicolor</string>
 		<string>privacyandsecurity</string>
 		<string>variablecolor</string>
+	</array>
+	<key>tow.hitch</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>tow.hitch.exclamationmark</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>tow.hitch.exclamationmark.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>tow.hitch.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
 	</array>
 	<key>traction.control.tirepressure</key>
 	<array>
@@ -30340,6 +31656,57 @@
 	<array>
 		<string>automotive</string>
 	</array>
+	<key>truck.side.hill.descent.control</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>truck.side.hill.descent.control.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>truck.side.roof.cargo.carrier</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>truck.side.roof.cargo.carrier.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>truck.side.roof.cargo.carrier.slash</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>truck.side.roof.cargo.carrier.slash.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>tsa</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>tsa.circle</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
+	<key>tsa.circle.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>tsa.slash</key>
+	<array>
+		<string>automotive</string>
+		<string>whatsnew</string>
+	</array>
 	<key>tshirt</key>
 	<array>
 		<string>objectsandtools</string>
@@ -30405,6 +31772,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>tugriksign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>tugriksign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>tugriksign.square</key>
 	<array>
 		<string>commerce</string>
@@ -30462,6 +31840,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>turkishlirasign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>turkishlirasign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>turkishlirasign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>
@@ -30995,6 +32384,19 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>wave.3.down.car.side</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>wave.3.down.car.side.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>wave.3.down.circle</key>
 	<array>
 		<string>connectivity</string>
@@ -31004,6 +32406,45 @@
 	<key>wave.3.down.circle.fill</key>
 	<array>
 		<string>connectivity</string>
+		<string>multicolor</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>wave.3.down.convertible.side</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>wave.3.down.convertible.side.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>wave.3.down.pickup.side</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>wave.3.down.pickup.side.fill</key>
+	<array>
+		<string>automotive</string>
+		<string>multicolor</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>wave.3.down.suv.side</key>
+	<array>
+		<string>automotive</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>wave.3.down.suv.side.fill</key>
+	<array>
+		<string>automotive</string>
 		<string>multicolor</string>
 		<string>variablecolor</string>
 		<string>whatsnew</string>
@@ -31465,6 +32906,17 @@
 		<string>variablecolor</string>
 		<string>whatsnew</string>
 	</array>
+	<key>wonsign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>wonsign.ring.dashed</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
 	<key>wonsign.square</key>
 	<array>
 		<string>commerce</string>
@@ -31633,6 +33085,18 @@
 	<array>
 		<string>multicolor</string>
 	</array>
+	<key>xmark.triangle.circle.square</key>
+	<array>
+		<string>accessibility</string>
+		<string>shapes</string>
+		<string>whatsnew</string>
+	</array>
+	<key>xmark.triangle.circle.square.fill</key>
+	<array>
+		<string>accessibility</string>
+		<string>shapes</string>
+		<string>whatsnew</string>
+	</array>
 	<key>xserve</key>
 	<array>
 		<string>devices</string>
@@ -31703,6 +33167,17 @@
 		<string>whatsnew</string>
 	</array>
 	<key>yensign.gauge.chart.leftthird.topthird.rightthird</key>
+	<array>
+		<string>commerce</string>
+		<string>home</string>
+		<string>variablecolor</string>
+		<string>whatsnew</string>
+	</array>
+	<key>yensign.ring</key>
+	<array>
+		<string>whatsnew</string>
+	</array>
+	<key>yensign.ring.dashed</key>
 	<array>
 		<string>commerce</string>
 		<string>home</string>

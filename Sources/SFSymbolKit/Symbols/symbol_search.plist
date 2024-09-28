@@ -545,6 +545,14 @@
 		<string>activities</string>
 		<string>path</string>
 	</array>
+	<key>apple.image.playground</key>
+	<array>
+		<string>sparkles</string>
+	</array>
+	<key>apple.image.playground.fill</key>
+	<array>
+		<string>sparkles</string>
+	</array>
 	<key>applewatch.slash</key>
 	<array>
 		<string>remove</string>
@@ -1585,6 +1593,18 @@
 		<string>sound</string>
 		<string>speaker</string>
 	</array>
+	<key>beats.pill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.pill.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
 	<key>beats.powerbeats</key>
 	<array>
 		<string>audio</string>
@@ -1642,6 +1662,36 @@
 		<string>speaker</string>
 	</array>
 	<key>beats.powerbeats3.right</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.solobuds</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.solobuds.chargingcase</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.solobuds.chargingcase.fill</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.solobuds.left</key>
+	<array>
+		<string>audio</string>
+		<string>sound</string>
+		<string>speaker</string>
+	</array>
+	<key>beats.solobuds.right</key>
 	<array>
 		<string>audio</string>
 		<string>sound</string>
@@ -2212,6 +2262,14 @@
 		<string>!</string>
 		<string>warning</string>
 	</array>
+	<key>car.side.hill.descent.control</key>
+	<array>
+		<string>DSR</string>
+	</array>
+	<key>car.side.hill.descent.control.fill</key>
+	<array>
+		<string>DSR</string>
+	</array>
 	<key>car.side.lock</key>
 	<array>
 		<string>padlock</string>
@@ -2502,6 +2560,14 @@
 	<key>character.textbox</key>
 	<array>
 		<string>a</string>
+	</array>
+	<key>chart.line.text.clipboard</key>
+	<array>
+		<string>notes</string>
+	</array>
+	<key>chart.line.text.clipboard.fill</key>
+	<array>
+		<string>notes</string>
 	</array>
 	<key>checkmark.circle</key>
 	<array>
@@ -2995,6 +3061,14 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>convertible.side.hill.descent.control</key>
+	<array>
+		<string>DSR</string>
+	</array>
+	<key>convertible.side.hill.descent.control.fill</key>
+	<array>
+		<string>DSR</string>
+	</array>
 	<key>convertible.side.lock</key>
 	<array>
 		<string>padlock</string>
@@ -3145,6 +3219,20 @@
 		<string>currencies</string>
 		<string>currency</string>
 	</array>
+	<key>cup.and.heat.waves</key>
+	<array>
+		<string>coffee</string>
+		<string>drink</string>
+		<string>steam</string>
+		<string>tea</string>
+	</array>
+	<key>cup.and.heat.waves.fill</key>
+	<array>
+		<string>coffee</string>
+		<string>drink</string>
+		<string>steam</string>
+		<string>tea</string>
+	</array>
 	<key>cup.and.saucer</key>
 	<array>
 		<string>coffee</string>
@@ -3205,7 +3293,7 @@
 	<array>
 		<string>weather</string>
 	</array>
-	<key>degreesign.farenheit</key>
+	<key>degreesign.fahrenheit</key>
 	<array>
 		<string>weather</string>
 	</array>
@@ -3547,6 +3635,17 @@
 	<key>dot.radiowaves.forward</key>
 	<array>
 		<string>right</string>
+	</array>
+	<key>dot.scope</key>
+	<array>
+		<string>circle</string>
+		<string>crosshair</string>
+		<string>inspect</string>
+		<string>locate</string>
+		<string>measure</string>
+		<string>point</string>
+		<string>select</string>
+		<string>target</string>
 	</array>
 	<key>dot.squareshape.split.2x2</key>
 	<array>
@@ -7087,6 +7186,14 @@
 	<array>
 		<string>privacy</string>
 	</array>
+	<key>hand.rays</key>
+	<array>
+		<string>touch</string>
+	</array>
+	<key>hand.rays.fill</key>
+	<array>
+		<string>touch</string>
+	</array>
 	<key>hand.tap</key>
 	<array>
 		<string>touch</string>
@@ -8299,6 +8406,10 @@
 	<array>
 		<string>edit</string>
 		<string>vibrance</string>
+	</array>
+	<key>line.3.horizontal.decrease</key>
+	<array>
+		<string>filter</string>
 	</array>
 	<key>line.3.horizontal.decrease.circle</key>
 	<array>
@@ -9579,6 +9690,10 @@
 		<string>writing</string>
 	</array>
 	<key>percent</key>
+	<array>
+		<string>%</string>
+	</array>
+	<key>percent.ar</key>
 	<array>
 		<string>%</string>
 	</array>
@@ -11894,7 +12009,7 @@
 		<string>people</string>
 		<string>person</string>
 	</array>
-	<key>sharedwithyou.circle.slash</key>
+	<key>sharedwithyou.slash</key>
 	<array>
 		<string>people</string>
 		<string>person</string>
@@ -12471,6 +12586,18 @@
 		<string>import</string>
 		<string>save</string>
 	</array>
+	<key>square.and.arrow.down.badge.clock</key>
+	<array>
+		<string>download</string>
+		<string>import</string>
+		<string>save</string>
+	</array>
+	<key>square.and.arrow.down.badge.clock.fill</key>
+	<array>
+		<string>download</string>
+		<string>import</string>
+		<string>save</string>
+	</array>
 	<key>square.and.arrow.down.fill</key>
 	<array>
 		<string>download</string>
@@ -12866,6 +12993,10 @@
 	<array>
 		<string>weather</string>
 	</array>
+	<key>sun.lefthalf.filled</key>
+	<array>
+		<string>sun</string>
+	</array>
 	<key>sun.max</key>
 	<array>
 		<string>weather</string>
@@ -12917,6 +13048,10 @@
 	<key>sun.rain.fill</key>
 	<array>
 		<string>weather</string>
+	</array>
+	<key>sun.righthalf.filled</key>
+	<array>
+		<string>sun</string>
 	</array>
 	<key>sun.snow</key>
 	<array>
@@ -12983,6 +13118,14 @@
 	<array>
 		<string>!</string>
 		<string>warning</string>
+	</array>
+	<key>suv.side.hill.descent.control</key>
+	<array>
+		<string>DSR</string>
+	</array>
+	<key>suv.side.hill.descent.control.fill</key>
+	<array>
+		<string>DSR</string>
 	</array>
 	<key>suv.side.lock</key>
 	<array>
@@ -13525,6 +13668,22 @@
 		<string>password</string>
 		<string>security</string>
 	</array>
+	<key>tow.hitch</key>
+	<array>
+		<string>towing system</string>
+	</array>
+	<key>tow.hitch.exclamationmark</key>
+	<array>
+		<string>towing system</string>
+	</array>
+	<key>tow.hitch.exclamationmark.fill</key>
+	<array>
+		<string>towing system</string>
+	</array>
+	<key>tow.hitch.fill</key>
+	<array>
+		<string>towing system</string>
+	</array>
 	<key>trash</key>
 	<array>
 		<string>mail</string>
@@ -13687,6 +13846,14 @@
 		<string>padlock</string>
 		<string>unlock</string>
 	</array>
+	<key>truck.side.hill.descent.control</key>
+	<array>
+		<string>DSR</string>
+	</array>
+	<key>truck.side.hill.descent.control.fill</key>
+	<array>
+		<string>DSR</string>
+	</array>
 	<key>tugriksign</key>
 	<array>
 		<string>currencies</string>
@@ -13766,6 +13933,22 @@
 	<array>
 		<string>currencies</string>
 		<string>currency</string>
+	</array>
+	<key>umbrella.percent</key>
+	<array>
+		<string>%</string>
+	</array>
+	<key>umbrella.percent.ar</key>
+	<array>
+		<string>%</string>
+	</array>
+	<key>umbrella.percent.fill</key>
+	<array>
+		<string>%</string>
+	</array>
+	<key>umbrella.percent.fill.ar</key>
+	<array>
+		<string>%</string>
 	</array>
 	<key>video</key>
 	<array>
