@@ -1,8 +1,8 @@
 //
 //  WeightTests.swift
 //  SFSymbolKit
-//
-//  Created by Dalton Alexandre on 9/29/24.
+//  https://github.com/dl-alexandre/SFSymbolKit
+//  See LICENSE for license information.
 //
 
 import XCTest
