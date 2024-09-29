@@ -8,7 +8,12 @@
 import SwiftUI
 /// `ResizingMode` is an enumeration that defines a list of SF Symbol Image Resizing Mode.
 public enum ResizingMode: Int, CaseIterable {
-    case tile, stretch
+    /// A mode to repeat the image at its original size, as many
+    /// times as necessary to fill the available space.
+    case tile
+    /// A mode to enlarge or reduce the size of an image so that it
+    /// fills the available space.
+    case stretch
 
     /// Provides a human-readable name for each Image Resizing Mode.
     public var name: String {

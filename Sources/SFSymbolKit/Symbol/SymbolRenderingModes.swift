@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+
 /// `SymbolRenderingModes` is an enumeration that defines a list of SF Symbol Rendering Modes.
-public enum SymbolRenderingModes: Int, CaseIterable {
+public enum SymbolRenderingModes: Int, CaseIterable, Equatable {
 
     /// One color to all layers in a symbol. Within a symbol,
     /// paths render in the color you specify or as a transparent shape within a color-filled path.

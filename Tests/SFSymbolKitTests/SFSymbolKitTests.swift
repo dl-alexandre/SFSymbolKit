@@ -17,7 +17,8 @@ final class SFSymbolKitTests {
         /// expected5oneSymbolsCount = 5648 // SF Symbols 5.1
         /// expected5oneSymbolsCountPlusSwift = 5649 // SF Symbols 5.1 + "swift"
         /// expected6SymbolCount = 6558 // SF Symbols 6 + "swift" + "swiftdata"
-        let swiftSymbolCount = 6830 // SF Symbols 6 + "swift" + "swiftdata" + "appclip" + "appclip.fill" + "applescript"
+        /// SF Symbols 6 + "swift" + "swiftdata" + "appclip" + "appclip.fill" + "applescript"
+        let swiftSymbolCount = 6830
 
         // The actual array of symbols returned by the `decodePList` function.
         let symbols = decodePList()
@@ -28,4 +29,3 @@ final class SFSymbolKitTests {
         #expect(symbols.count == swiftSymbolCount, "The symbols array should contain \(swiftSymbolCount) symbols.")
     }
 }
-
