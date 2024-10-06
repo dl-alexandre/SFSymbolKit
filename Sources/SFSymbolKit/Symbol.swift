@@ -10,8 +10,8 @@ public struct Symbol: Codable, Hashable, Equatable {
         return lhs.name == rhs.name && lhs.category == rhs.category
     }
 
-    let name: String
-    let category: [SymbolCategory]
+    public let name: String
+    public let category: [SymbolCategory]
 
     public init(name: String, category: [SymbolCategory]) {
         self.name = name
