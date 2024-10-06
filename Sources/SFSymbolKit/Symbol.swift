@@ -11,5 +11,29 @@ public struct Symbol: Codable, Hashable, Equatable {
     }
 
     let name: String
-    let category: [Category]
+    let category: [SymbolCategory]
+
+    public init(name: String, category: [SymbolCategory]) {
+        self.name = name
+        self.category = category
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case category = "category"
+    }
+
+    // Decodable initializer
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        name = try container.decode(String.self, forKey: .name)
+        category = try container.decode([SymbolCategory].self, forKey: .category)
+    }
+
+    // Encodable method
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(name, forKey: .name)
+        try container.encode(category.description, forKey: .category)
+    }
 }
