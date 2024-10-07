@@ -9,7 +9,7 @@ import SwiftUI
 
 /// `SymbolCategory` represents different categories of symbols.
 /// Each category includes a label, an icon, and count representing the category.
-public enum SymbolCategory: Int, CaseIterable, Decodable {
+public enum SymbolCategory: Int, CaseIterable, Decodable, Identifiable {
     case all
     case whatsnew
     case multicolor
@@ -42,6 +42,9 @@ public enum SymbolCategory: Int, CaseIterable, Decodable {
     case indeces
     case math
     case custom
+
+    /// The unique identifier for each category.
+    public var id: Int { self.rawValue }
 
     /// The label for the symbol category.
     /// This property provides a descriptive label for each category.
