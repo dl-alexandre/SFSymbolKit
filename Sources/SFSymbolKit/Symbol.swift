@@ -7,15 +7,15 @@
 
 public struct Symbol: Codable, Hashable, Equatable {
     public static func == (lhs: Symbol, rhs: Symbol) -> Bool {
-        return lhs.name == rhs.name && lhs.category == rhs.category
+        return lhs.name == rhs.name && lhs.categories == rhs.categories
     }
 
     public let name: String
-    public let category: [SymbolCategory]
+    public let categories: [SymbolCategory]
 
-    public init(name: String, category: [SymbolCategory]) {
+    public init(name: String, categories: [SymbolCategory]) {
         self.name = name
-        self.category = category
+        self.categories = categories
     }
 
     enum CodingKeys: String, CodingKey {
@@ -27,13 +27,13 @@ public struct Symbol: Codable, Hashable, Equatable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         name = try container.decode(String.self, forKey: .name)
-        category = try container.decode([SymbolCategory].self, forKey: .category)
+        categories = try container.decode([SymbolCategory].self, forKey: .category)
     }
 
     // Encodable method
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(name, forKey: .name)
-        try container.encode(category.description, forKey: .category)
+        try container.encode(categories.description, forKey: .category)
     }
 }

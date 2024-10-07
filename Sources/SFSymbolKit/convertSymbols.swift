@@ -17,7 +17,7 @@ public func convertSymbols() -> [Symbol] {
         let categories: [SymbolCategory] = categoryNames.compactMap { categoryName in
             categoryFromString(categoryName)
         }
-        let symbol = Symbol(name: key, category: categories)
+        let symbol = Symbol(name: key, categories: categories)
         symbols.append(symbol)
 
     }
