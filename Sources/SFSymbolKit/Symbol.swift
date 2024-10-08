@@ -22,7 +22,7 @@ public struct Symbol: Codable, Hashable, Equatable {
     /// The name of the symbol.
     public let name: String
     /// The categories associated with the symbol.
-    public let categories: [SymbolCategory]
+    public let categories: [SymbolCategory]?
 
     /// Initializes a new Symbol instance.
     /// - Parameters:
@@ -54,7 +54,7 @@ public struct Symbol: Codable, Hashable, Equatable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(name, forKey: .name)
-        try container.encode(categories.description, forKey: .category)
+        try container.encode(categories?.description, forKey: .category)
     }
 }
 
