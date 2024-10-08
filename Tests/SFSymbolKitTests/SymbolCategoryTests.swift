@@ -5,7 +5,6 @@
 //  See LICENSE for license information.
 //
 
-
 import XCTest
 import SwiftUI
 @testable import SFSymbolKit

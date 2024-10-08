@@ -41,4 +41,21 @@ public enum Weight: Int, CaseIterable {
         case .ultraLight: return .ultraLight
         }
     }
+
+    /// Creates a SwiftUI Picker for selecting a Weight value.
+    /// - Parameter weight: A Binding to the currently selected Weight value.
+    @ViewBuilder static public func picker(
+        weight: Binding<Weight>
+    ) -> some View {
+        VStack {
+            Picker("", selection: weight) {
+                ForEach(Weight.allCases, id: \.self) { weight in
+                    Text(weight.name)
+                        .font(.title)
+                        .fontWeight(weight.weight)
+                        .tag(weight)
+                }
+            }
+        }
+    }
 }

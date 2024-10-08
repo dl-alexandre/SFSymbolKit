@@ -53,4 +53,25 @@ public enum SymbolRenderingModes: Int, CaseIterable {
             return .palette
         }
     }
+
+    /// Creates a SwiftUI Picker for selecting a Weight value.
+    /// - Parameter weight: A Binding to the currently selected Weight value.
+    @ViewBuilder static func picker(
+        mode: Binding<SymbolRenderingModes>
+    ) -> some View {
+        VStack {
+            Picker("", selection: mode) {
+                ForEach(SymbolRenderingModes.allCases, id: \.self) { sample in
+                    let image = Image(systemName: "textformat.abc.dottedunderline")
+                        .symbolRenderingMode(sample.mode)
+                    HStack {
+                        image
+                        Text(sample.name)
+                            .font(.headline)
+                    }
+                    .tag(sample)
+                }
+            }
+        }
+    }
 }

@@ -27,6 +27,28 @@ class SymbolRenderingModesTests: XCTestCase {
         XCTAssertEqual(SymbolRenderingModes.palette.name, "Palette")
     }
 
+    @MainActor func testPickerContent() {
+        let sampleMode = Binding.constant(SymbolRenderingModes.monochrome)
+        let view = SymbolRenderingModes.picker(mode: sampleMode)
+
+#if os(iOS)
+        let controller = UIHostingController(rootView: view)
+#else
+        let controller = NSHostingController(rootView: view)
+#endif
+
+        let expectation = self.expectation(description: "Load view")
+
+        DispatchQueue.main.async {
+            let renderedView = controller.view
+            XCTAssertNotNil(renderedView, "The view should be rendered")
+            expectation.fulfill()
+        }
+
+        wait(for: [expectation], timeout: 1.0)
+
+        // Add further assertions if needed, e.g., verifying the content of the picker.
+    }
 //    func testMonochromeMode() {
 //        XCTAssertEqual(SymbolRenderingModes.monochrome.mode, SymbolRenderingMode.monochrome)
 //    }

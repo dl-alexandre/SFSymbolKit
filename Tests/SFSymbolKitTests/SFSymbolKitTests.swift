@@ -11,43 +11,126 @@ import SwiftUI
 
 final class SFSymbolKitTests {
 
-    @Test("Decode PList correctly")
-    func testDecodePList() async throws {
-        // The expected number of symbols that should be present in the plist
-        /// expected5oneSymbolsCount = 5648 // SF Symbols 5.1
-        /// expected5oneSymbolsCountPlusSwift = 5649 // SF Symbols 5.1 + "swift"
-        /// expected6SymbolCount = 6558 // SF Symbols 6 + "swift" + "swiftdata"
-        /// SF Symbols 6 + "swift" + "swiftdata" + "appclip" + "appclip.fill" + "applescript"
-        let swiftSymbolCount = 6830
-
-        // The actual array of symbols returned by the `decodePList` function.
-        let symbols = convertSymbolsAsArrayOfStrings()
-
-        // Asserts that the symbols array is not empty.
-        #expect(!symbols.isEmpty, "The symbols array should not be empty.")
-        // Asserts that the symbols array contains the expected number of symbols.
-        #expect(symbols.count == swiftSymbolCount, "The symbols array should contain \(swiftSymbolCount) symbols.")
-    }
-
     @Test("Decode PList correctly as Structs")
     func testDecodePListAsStructs() async throws {
         let categoryCount = 6830
-
-        let symbols  = convertSymbols()
+        let categorizor = Categorizor()
+        let symbolizor = Symbolizor()
+        let symbols  = convertSymbols(categorization: categorizor, symbolization: symbolizor)
 
         #expect(!symbols.isEmpty, "The symbols array should not be empty.")
 
         #expect(symbols.count == categoryCount, "The symbols array should contain \(categoryCount) categories.")
     }
 
-    @Test("Decode Category PList")
+    @Test("Count Category PList")
     func testDecodeCategoryPList() async throws {
         let categoryCount = 32
+        let categorizor = Categorizor()
+        let categories = categorizor.categorize()
 
-        let categories = decodeCategoryList()
-        
         #expect(!categories.isEmpty, "The categories array should not be empty.")
-        
+
         #expect(categories.count == categoryCount, "The categories array should contain \(categoryCount) categories.")
+    }
+
+    @Test("Decode Category PList")
+    func testConvertCategories() async throws {
+        let categorizor = MockCategorizor()
+
+        let expectedDict: [String: SFSymbolKit.Category] = [
+            "all": Category(icon: all.icon, key: all.key, label: all.label),
+            "multicolor": Category(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
+            "variablecolor": Category(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
+        ]
+        let result = convertCategories(categorization: categorizor)
+
+        #expect(
+            result == expectedDict,
+            "The convertCategories function did not produce the expected result."
+        )
+    }
+
+    let all = SymbolCategory.all
+    let multicolor = SymbolCategory.multicolor
+    let variablecolor = SymbolCategory.variablecolor
+
+    func decodeSymbolDict() -> [String: [String]] {
+        return [
+            "symbol1": ["all", "multicolor"],
+            "symbol2": ["variablecolor"]
+        ]
+    }
+
+    @Test("Decode Symbol PList")
+    func testConvertSymbols() {
+        let expectedSymbols = [
+            Symbol(name: "symbol1", categories: [
+                Category(icon: "square.grid.2x2", key: "all", label: "All"),
+                Category(icon: "paintpalette", key: "multicolor", label: "Multicolor")
+            ]),
+            Symbol(
+                name: "symbol2",
+                categories: [
+                    Category(
+                        icon: "slider.horizontal.below.square.and.square.filled",
+                        key: "variablecolor",
+                        label: "Variable Color"
+                    )
+                ]
+            )
+        ].sorted { $0.name < $1.name }
+
+        // Initialize the mock categorizor and symbolizor
+        let mockCategorizor = MockCategorizor()
+        let symbolizor = MockSymbolizor()
+
+        // Perform the test
+        let result = symbolizor.symbolize(categorization: mockCategorizor).sorted { $0.name < $1.name }
+
+        // Assert the results
+        #expect(result == expectedSymbols, "The convertSymbols function did not produce the expected result.")
+    }
+}
+
+class MockCategorizor: Categorizing {
+    let all = SymbolCategory.all
+    let multicolor = SymbolCategory.multicolor
+    let variablecolor = SymbolCategory.variablecolor
+
+    func categorize() -> [SFSymbolKit.Category] {
+        return [
+            Category(icon: all.icon, key: all.key, label: all.label),
+            Category(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
+            Category(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
+        ]
+    }
+}
+
+// Mock the Symbolizor and its dependencies
+class MockSymbolizor: Symbolizor {
+    // Mock data for testing
+    let mockSymbolDict: [String: [String]] = [
+        "symbol1": ["all", "multicolor"],
+        "symbol2": ["variablecolor"]
+    ]
+
+    override func symbolize(categorization: Categorizing) -> [Symbol] {
+        let symbolList = mockSymbolDict
+        let categoryDict: [String: SFSymbolKit.Category] = categorization.categorize().reduce(
+            into: [String: SFSymbolKit.Category]()
+        ) { dict, category in
+            dict[category.key] = category
+        }
+        var symbols: [Symbol] = []
+
+        for (key, categoryNames) in symbolList {
+            let categories: [SFSymbolKit.Category] = categoryNames.compactMap { categoryName in
+                categoryDict[categoryName]
+            }
+            let symbol = Symbol(name: key, categories: categories)
+            symbols.append(symbol)
+        }
+        return symbols
     }
 }

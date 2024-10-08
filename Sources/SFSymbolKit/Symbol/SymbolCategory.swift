@@ -9,7 +9,7 @@ import SwiftUI
 
 /// `SymbolCategory` represents different categories of symbols.
 /// Each category includes a label, an icon, and count representing the category.
-public enum SymbolCategory: Int, CaseIterable, Decodable, Identifiable {
+public enum SymbolCategory: String, CaseIterable, Decodable {
     case all
     case whatsnew
     case multicolor
@@ -43,15 +43,22 @@ public enum SymbolCategory: Int, CaseIterable, Decodable, Identifiable {
     case math
     case custom
 
+    /// Generates an `Image` from the given `SymbolCategory`.
+    /// - Parameter category: The `SymbolCategory` to generate the image for.
+    /// - Returns: An `Image` representing the icon of the specified category.
+    static public func icon(from category: SymbolCategory) -> Image {
+        return Image(systemName: category.icon)
+    }
+
     /// The unique identifier for each category.
-    public var id: Int { self.rawValue }
+    public var key: String { self.rawValue }
 
     /// The label for the symbol category.
     /// This property provides a descriptive label for each category.
     /// - Returns: A string representing the label of the category.
     public var label: String {
         switch self {
-        case .all: 
+        case .all:
             return "All"
         case .whatsnew:
             return "What's New"
@@ -118,74 +125,43 @@ public enum SymbolCategory: Int, CaseIterable, Decodable, Identifiable {
         }
     }
 
-    /// The icon for the symbol category.
-    /// This property provides an icon image for each category.
-    /// - Returns: An `Image` representing the icon of the category.
-    public var icon: Image {
+    /// The icon name for the symbol category.
+    /// This property provides the icon name for each category.
+    /// - Returns: A `String` representing the icon name of the category.
+    public var icon: String {
         switch self {
-        case .all: return Image(systemName: "square.grid.2x2")
-        case .whatsnew:
-            return Image(systemName: "sparkles")
-        case .multicolor:
-            return Image(systemName: "paintpalette")
-        case .variablecolor:
-            return Image(systemName: "slider.horizontal.below.square.and.square.filled")
-        case .communication:
-            return Image(systemName: "message")
-        case .weather:
-            return Image(systemName: "cloud.sun")
-        case .maps:
-            return Image(systemName: "map")
-        case .objectsandtools:
-            return Image(systemName: "folder")
-        case .devices:
-            return Image(systemName: "desktopcomputer")
-        case .cameraandphotos:
-            return Image(systemName: "camera")
-        case .gaming:
-            return Image(systemName: "gamecontroller")
-        case .connectivity:
-            return Image(systemName: "antenna.radiowaves.left.and.right")
-        case .transportation:
-            return Image(systemName: "car.fill")
-        case .automotive:
-            return Image(systemName: "steeringwheel")
-        case .accessibility:
-            return Image(systemName: "accessibility")
-        case .privacyandsecurity:
-            return Image(systemName: "lock")
-        case .human:
-            return Image(systemName: "person.crop.circle")
-        case .home:
-            return Image(systemName: "house")
-        case .fitness:
-            return Image(systemName: "figure.run")
-        case .nature:
-            return Image(systemName: "leaf")
-        case .editing:
-            return Image(systemName: "slider.horizontal.3")
-        case .textformatting:
-            return Image(systemName: "textformat")
-        case .media:
-            return Image(systemName: "playpause")
-        case .keyboard:
-            return Image(systemName: "command")
-        case .commerce:
-            return Image(systemName: "cart")
-        case .time:
-            return Image(systemName: "timer")
-        case .health:
-            return Image(systemName: "heart")
-        case .shapes:
-            return Image(systemName: "square.on.circle")
-        case .arrows:
-            return Image(systemName: "arrow.forward")
-        case .indeces:
-            return Image(systemName: "a.circle")
-        case .math:
-            return Image(systemName: "x.squareroot")
-        case .custom:
-            return Image(systemName: "square.grid.2x2")
+        case .all: return "square.grid.2x2"
+        case .whatsnew: return "sparkles"
+        case .multicolor: return "paintpalette"
+        case .variablecolor: return "slider.horizontal.below.square.and.square.filled"
+        case .communication: return "message"
+        case .weather: return "cloud.sun"
+        case .maps: return "map"
+        case .objectsandtools: return "folder"
+        case .devices: return "desktopcomputer"
+        case .cameraandphotos: return "camera"
+        case .gaming: return "gamecontroller"
+        case .connectivity: return "antenna.radiowaves.left.and.right"
+        case .transportation: return "car.fill"
+        case .automotive: return "steeringwheel"
+        case .accessibility: return "accessibility"
+        case .privacyandsecurity: return "lock"
+        case .human: return "person.crop.circle"
+        case .home: return "house"
+        case .fitness: return "figure.run"
+        case .nature: return "leaf"
+        case .editing: return "slider.horizontal.3"
+        case .textformatting: return "textformat"
+        case .media: return "playpause"
+        case .keyboard: return "command"
+        case .commerce: return "cart"
+        case .time: return "timer"
+        case .health: return "heart"
+        case .shapes: return "square.on.circle"
+        case .arrows: return "arrow.forward"
+        case .indeces: return "a.circle"
+        case .math: return "x.squareroot"
+        case .custom: return "square.grid.2x2"
         }
     }
 
