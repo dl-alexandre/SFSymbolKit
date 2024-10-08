@@ -1,5 +1,5 @@
 //
-//  CategoryKeys.swift
+//  CategoryTokens.swift
 //  SFSymbolKit
 //  https://github.com/dl-alexandre/SFSymbolKit
 //  See LICENSE for license information.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-/// `CategoryKeys` represents different categories of symbols.
+/// `CategoryTokens` represents different categories of symbols.
 /// Each category includes a label, an icon, and count representing the category.
-public enum CategoryKeys: String, CaseIterable, Decodable {
+public enum CategoryTokens: String, CaseIterable, Decodable {
     case all
     case whatsnew
     case multicolor
@@ -43,10 +43,10 @@ public enum CategoryKeys: String, CaseIterable, Decodable {
     case math
     case custom
 
-    /// Generates an `Image` from the given `CategoryKeys`.
-    /// - Parameter category: The `CategoryKeys` to generate the image for.
+    /// Generates an `Image` from the given `CategoryTokens`.
+    /// - Parameter category: The `CategoryTokens` to generate the image for.
     /// - Returns: An `Image` representing the icon of the specified category.
-    static public func icon(from category: CategoryKeys) -> Image {
+    static public func icon(from category: CategoryTokens) -> Image {
         return Image(systemName: category.icon)
     }
 

@@ -12,7 +12,7 @@ import SwiftUI
 class CategoryKeysTests: XCTestCase {
 
     func testCategoryKeysLabels() {
-        let expectedLabels: [CategoryKeys: String] = [
+        let expectedLabels: [CategoryTokens: String] = [
             .all: "All",
             .whatsnew: "What's New",
             .multicolor: "Multicolor",
@@ -53,7 +53,7 @@ class CategoryKeysTests: XCTestCase {
     }
 
     func testCategoryKeysIcons() {
-        let expectedIcons: [CategoryKeys: String] = [
+        let expectedIcons: [CategoryTokens: String] = [
             .all: "square.grid.2x2",
             .whatsnew: "sparkles",
             .multicolor: "paintpalette",

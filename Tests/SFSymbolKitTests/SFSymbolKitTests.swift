@@ -51,9 +51,9 @@ final class SFSymbolKitTests {
         )
     }
 
-    let all = CategoryKeys.all
-    let multicolor = CategoryKeys.multicolor
-    let variablecolor = CategoryKeys.variablecolor
+    let all = CategoryTokens.all
+    let multicolor = CategoryTokens.multicolor
+    let variablecolor = CategoryTokens.variablecolor
 
     func decodeSymbolDict() -> [String: [String]] {
         return [
@@ -94,9 +94,9 @@ final class SFSymbolKitTests {
 }
 
 class MockCategorizer: Categorizing {
-    let all = CategoryKeys.all
-    let multicolor = CategoryKeys.multicolor
-    let variablecolor = CategoryKeys.variablecolor
+    let all = CategoryTokens.all
+    let multicolor = CategoryTokens.multicolor
+    let variablecolor = CategoryTokens.variablecolor
 
     func categorize() -> [SFSymbolKit.SymbolCategory] {
         return [
