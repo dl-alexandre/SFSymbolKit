@@ -46,8 +46,8 @@ public enum CategoryTokens: String, CaseIterable, Decodable {
     /// Generates an `Image` from the given `CategoryTokens`.
     /// - Parameter category: The `CategoryTokens` to generate the image for.
     /// - Returns: An `Image` representing the icon of the specified category.
-    static public func icon(from category: CategoryTokens) -> Image {
-        return Image(systemName: category.icon)
+    public static func icon(from token: CategoryTokens) -> Image {
+        return Image(systemName: token.icon)
     }
 
     /// The unique identifier for each category.
@@ -58,70 +58,38 @@ public enum CategoryTokens: String, CaseIterable, Decodable {
     /// - Returns: A string representing the label of the category.
     public var label: String {
         switch self {
-        case .all:
-            return "All"
-        case .whatsnew:
-            return "What's New"
-        case .multicolor:
-            return "Multicolor"
-        case .variablecolor:
-            return "Variable Color"
-        case .communication:
-            return "Communication"
-        case .weather:
-            return "Weather"
-        case .maps:
-            return "Maps"
-        case .objectsandtools:
-            return "Objects & Tools"
-        case .devices:
-            return "Devices"
-        case .cameraandphotos:
-            return "Camera & Photos"
-        case .gaming:
-            return "Gaming"
-        case .connectivity:
-            return "Connectivity"
-        case .transportation:
-            return "Transportation"
-        case .automotive:
-            return "Automotive"
-        case .accessibility:
-            return "Accessibility"
-        case .privacyandsecurity:
-            return "Privacy & Security"
-        case .human:
-            return "Human"
-        case .home:
-            return "Home"
-        case .fitness:
-            return "Fitness"
-        case .nature:
-            return "Nature"
-        case .editing:
-            return "Editing"
-        case .textformatting:
-            return "Text Formatting"
-        case .media:
-            return "Media"
-        case .keyboard:
-            return "Keyboard"
-        case .commerce:
-            return "Commerce"
-        case .time:
-            return "Time"
-        case .health:
-            return "Health"
-        case .shapes:
-            return "Shapes"
-        case .arrows:
-            return "Arrows"
-        case .indeces:
-            return "Indices"
-        case .math:
-            return "Math"
-        case .custom:
-            return "Custom"
+        case .all: return "All"
+        case .whatsnew: return "What's New"
+        case .multicolor: return "Multicolor"
+        case .variablecolor: return "Variable Color"
+        case .communication: return "Communication"
+        case .weather: return "Weather"
+        case .maps: return "Maps"
+        case .objectsandtools: return "Objects & Tools"
+        case .devices: return "Devices"
+        case .cameraandphotos: return "Camera & Photos"
+        case .gaming: return "Gaming"
+        case .connectivity: return "Connectivity"
+        case .transportation: return "Transportation"
+        case .automotive: return "Automotive"
+        case .accessibility: return "Accessibility"
+        case .privacyandsecurity: return "Privacy & Security"
+        case .human: return "Human"
+        case .home: return "Home"
+        case .fitness: return "Fitness"
+        case .nature: return "Nature"
+        case .editing: return "Editing"
+        case .textformatting: return "Text Formatting"
+        case .media: return "Media"
+        case .keyboard: return "Keyboard"
+        case .commerce: return "Commerce"
+        case .time: return "Time"
+        case .health: return "Health"
+        case .shapes: return "Shapes"
+        case .arrows: return "Arrows"
+        case .indeces: return "Indices"
+        case .math: return "Math"
+        case .custom: return "Custom"
         }
     }
 
@@ -170,70 +138,44 @@ public enum CategoryTokens: String, CaseIterable, Decodable {
     ///  - Returns: an `Int` representing the symbol count of the category
     var count: Int {
         switch self {
-        case .all:
-            return 6404
-        case .whatsnew:
-            return 1015
-        case .multicolor:
-            return 1956
-        case .variablecolor:
-            return 378
-        case .communication:
-            return 196
-        case .weather:
-            return 169
-        case .maps:
-            return 125
-        case .objectsandtools:
-            return 1305
-        case .devices:
-            return 504
-        case .cameraandphotos:
-            return 195
-        case .gaming:
-            return 229
-        case .connectivity:
-            return 88
-        case .transportation:
-            return 94
-        case .automotive:
-            return 738
-        case .accessibility:
-            return 114
-        case .privacyandsecurity:
-            return 144
-        case .human:
-            return 595
-        case .home:
-            return 443
-        case .fitness:
-            return 368
-        case .nature:
-            return 302
-        case .editing:
-            return 135
-        case .textformatting:
-            return 66
-        case .media:
-            return 96
-        case .keyboard:
-            return 73
-        case .commerce:
-            return 510
-        case .time:
-            return 41
-        case .health:
-            return 103
-        case .shapes:
-            return 53
-        case .arrows:
-            return 565
-        case .indeces:
-            return 582
-        case .math:
-            return 71
-        case .custom:
-            return 6
+        case .all: return 6404
+        case .whatsnew: return 1015
+        case .multicolor: return 1956
+        case .variablecolor: return 378
+        case .communication: return 196
+        case .weather: return 169
+        case .maps: return 125
+        case .objectsandtools: return 1305
+        case .devices: return 504
+        case .cameraandphotos: return 195
+        case .gaming: return 229
+        case .connectivity: return 88
+        case .transportation: return 94
+        case .automotive: return 738
+        case .accessibility: return 114
+        case .privacyandsecurity: return 144
+        case .human: return 595
+        case .home: return 443
+        case .fitness: return 368
+        case .nature: return 302
+        case .editing: return 135
+        case .textformatting: return 66
+        case .media: return 96
+        case .keyboard: return 73
+        case .commerce: return 510
+        case .time: return 41
+        case .health: return 103
+        case .shapes: return 53
+        case .arrows: return 565
+        case .indeces: return 582
+        case .math: return 71
+        case .custom: return 6
         }
+    }
+
+    /// Creates a dictionary mapping each `CategoryTokens` case to its corresponding label.
+    /// - Returns: A dictionary where the keys are `CategoryTokens` and the values are their corresponding labels.
+    public static func tokenDictionary() -> [CategoryTokens: String] {
+        Dictionary(uniqueKeysWithValues: CategoryTokens.allCases.map { ($0, $0.label) })
     }
 }

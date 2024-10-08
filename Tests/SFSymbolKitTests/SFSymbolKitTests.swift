@@ -39,10 +39,23 @@ final class SFSymbolKitTests {
         let categorizer = MockCategorizer()
 
         let expectedDict: [String: SFSymbolKit.SymbolCategory] = [
-            "all": SymbolCategory(icon: all.icon, key: all.key, label: all.label),
-            "multicolor": SymbolCategory(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
-            "variablecolor": SymbolCategory(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
+            "all": SymbolCategory(
+                icon: all.icon,
+                key: all.key,
+                label: all.label
+            ),
+            "multicolor": SymbolCategory(
+                icon: multicolor.icon,
+                key: multicolor.key,
+                label: multicolor.label
+            ),
+            "variablecolor": SymbolCategory(
+                icon: variablecolor.icon,
+                key: variablecolor.key,
+                label: variablecolor.label
+            )
         ]
+
         let result = convertCategories(categorization: categorizer)
 
         #expect(

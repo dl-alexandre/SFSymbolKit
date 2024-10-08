@@ -58,7 +58,6 @@ public struct Symbol: Codable, Hashable, Equatable {
     }
 }
 
-
 /// Protocol for symbolizing categories.
 /// Classes conforming to this protocol must implement the symbolize method to return a list of symbols.
 public protocol Symbolizing {
