@@ -29,7 +29,7 @@ public struct Symbol: Codable, Hashable, Equatable {
     ///   - name: The name of the symbol.
     ///   - categories: The categories associated with the symbol.
 
-    public init(name: String, categories: [SymbolCategory]) {
+    public init(name: String, categories: [SymbolCategory]?) {
         self.name = name
         self.categories = categories
     }
