@@ -10,13 +10,13 @@ import Foundation
 /// A struct representing a category, conforming to Codable, Equatable, and Hashable protocols.
 public struct Category: Codable, Equatable, Hashable {
     /// The icon associated with the category.
-    let icon: String
+    public let icon: String
 
     /// The key identifying the category.
-    let key: String
+    public let key: String
 
     /// The label of the category.
-    let label: String
+    public let label: String
 }
 
 /// Protocol for categorizing symbols.
