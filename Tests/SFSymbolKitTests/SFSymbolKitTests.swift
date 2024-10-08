@@ -14,9 +14,9 @@ final class SFSymbolKitTests {
     @Test("Decode PList correctly as Structs")
     func testDecodePListAsStructs() async throws {
         let categoryCount = 6830
-        let categorizor = Categorizor()
-        let symbolizor = Symbolizor()
-        let symbols  = convertSymbols(categorization: categorizor, symbolization: symbolizor)
+        let categorizer = Categorizer()
+        let symbolizer = Symbolizer()
+        let symbols  = convertSymbols(categorization: categorizer, symbolization: symbolizer)
 
         #expect(!symbols.isEmpty, "The symbols array should not be empty.")
 
@@ -26,8 +26,8 @@ final class SFSymbolKitTests {
     @Test("Count Category PList")
     func testDecodeCategoryPList() async throws {
         let categoryCount = 32
-        let categorizor = Categorizor()
-        let categories = categorizor.categorize()
+        let categorizer = Categorizer()
+        let categories = categorizer.categorize()
 
         #expect(!categories.isEmpty, "The categories array should not be empty.")
 
@@ -36,14 +36,14 @@ final class SFSymbolKitTests {
 
     @Test("Decode Category PList")
     func testConvertCategories() async throws {
-        let categorizor = MockCategorizor()
+        let categorizer = MockCategorizer()
 
         let expectedDict: [String: SFSymbolKit.Category] = [
             "all": Category(icon: all.icon, key: all.key, label: all.label),
             "multicolor": Category(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
             "variablecolor": Category(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
         ]
-        let result = convertCategories(categorization: categorizor)
+        let result = convertCategories(categorization: categorizer)
 
         #expect(
             result == expectedDict,
@@ -81,19 +81,19 @@ final class SFSymbolKitTests {
             )
         ].sorted { $0.name < $1.name }
 
-        // Initialize the mock categorizor and symbolizor
-        let mockCategorizor = MockCategorizor()
-        let symbolizor = MockSymbolizor()
+        // Initialize the mock categorizer and symbolizer
+        let mockCategorizer = MockCategorizer()
+        let symbolizer = MockSymbolizer()
 
         // Perform the test
-        let result = symbolizor.symbolize(categorization: mockCategorizor).sorted { $0.name < $1.name }
+        let result = symbolizer.symbolize(categorization: mockCategorizer).sorted { $0.name < $1.name }
 
         // Assert the results
         #expect(result == expectedSymbols, "The convertSymbols function did not produce the expected result.")
     }
 }
 
-class MockCategorizor: Categorizing {
+class MockCategorizer: Categorizing {
     let all = SymbolCategory.all
     let multicolor = SymbolCategory.multicolor
     let variablecolor = SymbolCategory.variablecolor
@@ -107,8 +107,8 @@ class MockCategorizor: Categorizing {
     }
 }
 
-// Mock the Symbolizor and its dependencies
-class MockSymbolizor: Symbolizing {
+// Mock the Symbolizer and its dependencies
+class MockSymbolizer: Symbolizing {
     // Mock data for testing
     let mockSymbolDict: [String: [String]] = [
         "symbol1": ["all", "multicolor"],
