@@ -29,6 +29,9 @@ public protocol Categorizing {
 
 /// Class implementing the Categorizing protocol to decode symbol categories from a plist file.
 public class Categorizer: Categorizing {
+    /// Publicly Initialize Categorizer
+    public init() {}
+
     /// Method to decode the plist into an array of `Category` objects.
     /// - Returns: An array of `Category` objects.
     public func categorize() -> [Category] {

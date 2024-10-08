@@ -84,6 +84,9 @@ public func convertCategories(categorization: Categorizing) -> [String: Category
 
 /// Class responsible for symbolizing categories by decoding a plist file.
 public class Symbolizer: Symbolizing {
+    /// Publicly Initialize Symbolizer
+    public init() {}
+
     /// Function to decode the plist into a dictionary of symbols.
     /// - Parameter categorization: An instance conforming to the `Categorizing` protocol.
     /// - Returns: An array of `Symbol` objects.
