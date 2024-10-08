@@ -17,6 +17,13 @@ public struct SymbolCategory: Codable, Equatable, Hashable {
 
     /// The label of the category.
     public let label: String
+
+    /// Publicly Initialize SymbolCategory
+    public init(icon: String, key: String, label: String) {
+        self.icon = icon
+        self.key = key
+        self.label = label
+    }
 }
 
 /// Protocol for categorizing symbols.
