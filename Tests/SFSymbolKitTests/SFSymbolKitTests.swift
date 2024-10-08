@@ -108,14 +108,14 @@ class MockCategorizor: Categorizing {
 }
 
 // Mock the Symbolizor and its dependencies
-class MockSymbolizor: Symbolizor {
+class MockSymbolizor: Symbolizing {
     // Mock data for testing
     let mockSymbolDict: [String: [String]] = [
         "symbol1": ["all", "multicolor"],
         "symbol2": ["variablecolor"]
     ]
 
-    override func symbolize(categorization: Categorizing) -> [Symbol] {
+    func symbolize(categorization: Categorizing) -> [Symbol] {
         let symbolList = mockSymbolDict
         let categoryDict: [String: SFSymbolKit.Category] = categorization.categorize().reduce(
             into: [String: SFSymbolKit.Category]()
