@@ -1,5 +1,5 @@
 //
-//  SymbolCategoryTests.swift
+//  CategoryKeysTests.swift
 //  SFSymbolKit
 //  https://github.com/dl-alexandre/SFSymbolKit
 //  See LICENSE for license information.
@@ -9,10 +9,10 @@ import XCTest
 import SwiftUI
 @testable import SFSymbolKit
 
-class SymbolCategoryTests: XCTestCase {
+class CategoryKeysTests: XCTestCase {
 
-    func testSymbolCategoryLabels() {
-        let expectedLabels: [SymbolCategory: String] = [
+    func testCategoryKeysLabels() {
+        let expectedLabels: [CategoryKeys: String] = [
             .all: "All",
             .whatsnew: "What's New",
             .multicolor: "Multicolor",
@@ -52,8 +52,8 @@ class SymbolCategoryTests: XCTestCase {
         }
     }
 
-    func testSymbolCategoryIcons() {
-        let expectedIcons: [SymbolCategory: String] = [
+    func testCategoryKeysIcons() {
+        let expectedIcons: [CategoryKeys: String] = [
             .all: "square.grid.2x2",
             .whatsnew: "sparkles",
             .multicolor: "paintpalette",

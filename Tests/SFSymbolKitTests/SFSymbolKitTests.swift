@@ -23,7 +23,7 @@ final class SFSymbolKitTests {
         #expect(symbols.count == categoryCount, "The symbols array should contain \(categoryCount) categories.")
     }
 
-    @Test("Count Category PList")
+    @Test("Count SymbolCategory PList")
     func testDecodeCategoryPList() async throws {
         let categoryCount = 32
         let categorizer = Categorizer()
@@ -34,14 +34,14 @@ final class SFSymbolKitTests {
         #expect(categories.count == categoryCount, "The categories array should contain \(categoryCount) categories.")
     }
 
-    @Test("Decode Category PList")
+    @Test("Decode SymbolCategory PList")
     func testConvertCategories() async throws {
         let categorizer = MockCategorizer()
 
-        let expectedDict: [String: SFSymbolKit.Category] = [
-            "all": Category(icon: all.icon, key: all.key, label: all.label),
-            "multicolor": Category(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
-            "variablecolor": Category(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
+        let expectedDict: [String: SFSymbolKit.SymbolCategory] = [
+            "all": SymbolCategory(icon: all.icon, key: all.key, label: all.label),
+            "multicolor": SymbolCategory(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
+            "variablecolor": SymbolCategory(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
         ]
         let result = convertCategories(categorization: categorizer)
 
@@ -51,9 +51,9 @@ final class SFSymbolKitTests {
         )
     }
 
-    let all = SymbolCategory.all
-    let multicolor = SymbolCategory.multicolor
-    let variablecolor = SymbolCategory.variablecolor
+    let all = CategoryKeys.all
+    let multicolor = CategoryKeys.multicolor
+    let variablecolor = CategoryKeys.variablecolor
 
     func decodeSymbolDict() -> [String: [String]] {
         return [
@@ -66,13 +66,13 @@ final class SFSymbolKitTests {
     func testConvertSymbols() {
         let expectedSymbols = [
             Symbol(name: "symbol1", categories: [
-                Category(icon: "square.grid.2x2", key: "all", label: "All"),
-                Category(icon: "paintpalette", key: "multicolor", label: "Multicolor")
+                SymbolCategory(icon: "square.grid.2x2", key: "all", label: "All"),
+                SymbolCategory(icon: "paintpalette", key: "multicolor", label: "Multicolor")
             ]),
             Symbol(
                 name: "symbol2",
                 categories: [
-                    Category(
+                    SymbolCategory(
                         icon: "slider.horizontal.below.square.and.square.filled",
                         key: "variablecolor",
                         label: "Variable Color"
@@ -94,15 +94,15 @@ final class SFSymbolKitTests {
 }
 
 class MockCategorizer: Categorizing {
-    let all = SymbolCategory.all
-    let multicolor = SymbolCategory.multicolor
-    let variablecolor = SymbolCategory.variablecolor
+    let all = CategoryKeys.all
+    let multicolor = CategoryKeys.multicolor
+    let variablecolor = CategoryKeys.variablecolor
 
-    func categorize() -> [SFSymbolKit.Category] {
+    func categorize() -> [SFSymbolKit.SymbolCategory] {
         return [
-            Category(icon: all.icon, key: all.key, label: all.label),
-            Category(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
-            Category(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
+            SymbolCategory(icon: all.icon, key: all.key, label: all.label),
+            SymbolCategory(icon: multicolor.icon, key: multicolor.key, label: multicolor.label),
+            SymbolCategory(icon: variablecolor.icon, key: variablecolor.key, label: variablecolor.label)
         ]
     }
 }
@@ -117,15 +117,15 @@ class MockSymbolizer: Symbolizing {
 
     func symbolize(categorization: Categorizing) -> [Symbol] {
         let symbolList = mockSymbolDict
-        let categoryDict: [String: SFSymbolKit.Category] = categorization.categorize().reduce(
-            into: [String: SFSymbolKit.Category]()
+        let categoryDict: [String: SFSymbolKit.SymbolCategory] = categorization.categorize().reduce(
+            into: [String: SFSymbolKit.SymbolCategory]()
         ) { dict, category in
             dict[category.key] = category
         }
         var symbols: [Symbol] = []
 
         for (key, categoryNames) in symbolList {
-            let categories: [SFSymbolKit.Category] = categoryNames.compactMap { categoryName in
+            let categories: [SFSymbolKit.SymbolCategory] = categoryNames.compactMap { categoryName in
                 categoryDict[categoryName]
             }
             let symbol = Symbol(name: key, categories: categories)

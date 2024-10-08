@@ -22,14 +22,14 @@ public struct Symbol: Codable, Hashable, Equatable {
     /// The name of the symbol.
     public let name: String
     /// The categories associated with the symbol.
-    public let categories: [Category]
+    public let categories: [SymbolCategory]
 
     /// Initializes a new Symbol instance.
     /// - Parameters:
     ///   - name: The name of the symbol.
     ///   - categories: The categories associated with the symbol.
 
-    public init(name: String, categories: [Category]) {
+    public init(name: String, categories: [SymbolCategory]) {
         self.name = name
         self.categories = categories
     }
@@ -45,7 +45,7 @@ public struct Symbol: Codable, Hashable, Equatable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         name = try container.decode(String.self, forKey: .name)
-        categories = try container.decode([Category].self, forKey: .category)
+        categories = try container.decode([SymbolCategory].self, forKey: .category)
     }
 
     /// Encodes the Symbol instance to an encoder.
@@ -70,10 +70,10 @@ public protocol Symbolizing {
 
 /// Function to convert a list of categories into a dictionary.
 /// - Parameter categorization: An instance conforming to the Categorizing protocol.
-/// - Returns: A dictionary where the keys are category keys and the values are `Category` objects.
-public func convertCategories(categorization: Categorizing) -> [String: Category] {
-    let categoryList: [Category] = categorization.categorize()
-    var categoryDict: [String: Category] = [:]
+/// - Returns: A dictionary where the keys are category keys and the values are `SymbolCategory` objects.
+public func convertCategories(categorization: Categorizing) -> [String: SymbolCategory] {
+    let categoryList: [SymbolCategory] = categorization.categorize()
+    var categoryDict: [String: SymbolCategory] = [:]
 
     for category in categoryList {
         categoryDict[category.key] = category
@@ -103,14 +103,14 @@ public class Symbolizer: Symbolizing {
 
         /// Initialize a PropertyListDecoder to decode the plist data
         let decoder = PropertyListDecoder()
-        let categoryDict: [String: Category] = convertCategories(categorization: categorization)
+        let categoryDict: [String: SymbolCategory] = convertCategories(categorization: categorization)
 
         var symbols: [Symbol] = []
 
         do {
             let dict = try decoder.decode([String: [String]].self, from: data)
             for (key, categoryNames) in dict {
-                let categories: [Category] = categoryNames.compactMap { categoryName in
+                let categories: [SymbolCategory] = categoryNames.compactMap { categoryName in
                     categoryDict[categoryName]
                 }
                 let symbol = Symbol(name: key, categories: categories)
