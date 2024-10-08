@@ -22,13 +22,12 @@ public struct Symbol: Codable, Hashable, Equatable {
     /// The name of the symbol.
     public let name: String
     /// The categories associated with the symbol.
-    public let categories: [SymbolCategory]?
+    public var categories: [SymbolCategory]?
 
     /// Initializes a new Symbol instance.
     /// - Parameters:
     ///   - name: The name of the symbol.
     ///   - categories: The categories associated with the symbol.
-
     public init(name: String, categories: [SymbolCategory]?) {
         self.name = name
         self.categories = categories
