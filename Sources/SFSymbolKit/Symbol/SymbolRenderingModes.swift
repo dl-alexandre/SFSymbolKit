@@ -56,7 +56,7 @@ public enum SymbolRenderingModes: Int, CaseIterable {
 
     /// Creates a SwiftUI Picker for selecting a Weight value.
     /// - Parameter weight: A Binding to the currently selected Weight value.
-    @ViewBuilder static func picker(
+    @ViewBuilder static public func picker(
         mode: Binding<SymbolRenderingModes>
     ) -> some View {
         VStack {
