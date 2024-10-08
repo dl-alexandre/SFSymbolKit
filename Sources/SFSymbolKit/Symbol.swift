@@ -27,6 +27,13 @@ public struct Symbol: Codable, Hashable, Equatable {
     /// Initializes a new Symbol instance.
     /// - Parameters:
     ///   - name: The name of the symbol.
+    public init(name: String) {
+        self.name = name
+    }
+
+    /// Initializes a new Symbol instance.
+    /// - Parameters:
+    ///   - name: The name of the symbol.
     ///   - categories: The categories associated with the symbol.
     public init(name: String, categories: [SymbolCategory]?) {
         self.name = name
