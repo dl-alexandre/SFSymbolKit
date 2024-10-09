@@ -5,25 +5,24 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
-
-class TemplateRenderingModeTests: XCTestCase {
-
-    func testTemplateRenderingModeNames() {
+@Suite("Template Rendering Mode Tests")
+struct TemplateRenderingModeTests {
+    @Test("Template Rendering Mode Name Test")
+    func testTemplateRenderingModeNames() async throws {
         let expectedNames = ["Template", "Original"]
-
         for (index, mode) in TemplateRenderingMode.allCases.enumerated() {
-            XCTAssertEqual(mode.name, expectedNames[index], "Expected \(expectedNames[index]) but got \(mode.name)")
+            #expect(mode.name == expectedNames[index], "Expected \(expectedNames[index]) but got \(mode.name)")
         }
     }
-
-    func testTemplateRenderingModeValues() {
+    @Test("Template Rendering Mode Value Test")
+    func testTemplateRenderingModeValues() async throws {
         let expectedScales: [Image.TemplateRenderingMode] = [.template, .original]
 
         for (index, mode) in TemplateRenderingMode.allCases.enumerated() {
-            XCTAssertEqual(mode.scale, expectedScales[index], "Expected \(expectedScales[index]) but got \(mode.scale)")
+            #expect(mode.scale == expectedScales[index], "Expected \(expectedScales[index]) but got \(mode.scale)")
         }
     }
 }

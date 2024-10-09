@@ -5,13 +5,14 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
 
-class OrientationTests: XCTestCase {
-
-    func testOrientationNames() {
+@Suite("Orientation Tests")
+struct OrientationTests {
+    @Test("Test Orientation Names")
+    func testOrientationNames() async throws {
         let expectedNames = [
             "Up", "Down", "Left", "Right",
             "Small Mirrored", "Medium Mirrored",
@@ -19,14 +20,13 @@ class OrientationTests: XCTestCase {
         ]
 
         for (index, orientation) in Orientation.allCases.enumerated() {
-            XCTAssertEqual(
-                orientation.name,
-                expectedNames[index],
+            #expect(
+                orientation.name == expectedNames[index],
                 "Expected \(expectedNames[index]) but got \(orientation.name)"
             )
         }
     }
-
+    @Test("Test Orientation Values")
     func testOrientationValues() {
         let expectedScales: [Image.Orientation] = [
             .up, .down, .left, .right,
@@ -35,9 +35,8 @@ class OrientationTests: XCTestCase {
         ]
 
         for (index, orientation) in Orientation.allCases.enumerated() {
-            XCTAssertEqual(
-                orientation.scale,
-                expectedScales[index],
+            #expect(
+                orientation.scale == expectedScales[index],
                 "Expected \(expectedScales[index]) but got \(orientation.scale)"
             )
         }

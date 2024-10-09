@@ -5,29 +5,29 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
-
-class SymbolRenderingModesTests: XCTestCase {
-
-    func testMonochromeName() {
-        XCTAssertEqual(SymbolRenderingModes.monochrome.name, "Monochrome")
+@Suite("Symbol Rendering Mode Tests")
+struct SymbolRenderingModesTests {
+    @Test("Monochrome Name Test")
+    func testMonochromeName() async throws {
+        #expect(SymbolRenderingModes.monochrome.name == "Monochrome")
     }
-
-    func testMulticolorName() {
-        XCTAssertEqual(SymbolRenderingModes.multicolor.name, "Multicolor")
+    @Test("Multicolor Name Test")
+    func testMulticolorName() async throws {
+        #expect(SymbolRenderingModes.multicolor.name == "Multicolor")
     }
-
-    func testHierarchicalName() {
-        XCTAssertEqual(SymbolRenderingModes.hierarchical.name, "Hierarchical")
+    @Test("Hierarchical Name Test")
+    func testHierarchicalName() async throws {
+        #expect(SymbolRenderingModes.hierarchical.name == "Hierarchical")
     }
-
-    func testPaletteName() {
-        XCTAssertEqual(SymbolRenderingModes.palette.name, "Palette")
+    @Test("Palette Name Test")
+    func testPaletteName() async throws {
+        #expect(SymbolRenderingModes.palette.name == "Palette")
     }
-
-    @MainActor func testPickerContent() {
+    @Test("Picker Test")
+    @MainActor func testPickerContent() async throws {
         let sampleMode = Binding.constant(SymbolRenderingModes.monochrome)
         let view = SymbolRenderingModes.picker(mode: sampleMode)
 
@@ -36,59 +36,9 @@ class SymbolRenderingModesTests: XCTestCase {
 #else
         let controller = NSHostingController(rootView: view)
 #endif
-
-        let expectation = self.expectation(description: "Load view")
-
         DispatchQueue.main.async {
             let renderedView = controller.view
-            XCTAssertNotNil(renderedView, "The view should be rendered")
-            expectation.fulfill()
+            #expect(renderedView != nil, "The view should be rendered")
         }
-
-        wait(for: [expectation], timeout: 1.0)
-
-        // Add further assertions if needed, e.g., verifying the content of the picker.
     }
-//    func testMonochromeMode() {
-//        XCTAssertEqual(SymbolRenderingModes.monochrome.mode, SymbolRenderingMode.monochrome)
-//    }
-//
-//    func testMulticolorMode() {
-//        XCTAssertEqual(SymbolRenderingModes.multicolor.mode, SymbolRenderingMode.multicolor)
-//    }
-//
-//    func testHierarchicalMode() {
-//    XCTAssertEqual(
-//        SymbolRenderingModes.hierarchical.mode,
-//        SymbolRenderingMode.hierarchical
-//    )
-//    }
-//
-//    func testPaletteMode() {
-//        XCTAssertEqual(SymbolRenderingModes.palette.mode, SymbolRenderingMode.palette)
-//    }
 }
-
-// extension SymbolRenderingMode: Equatable {
-//    public static func == (lhs: SymbolRenderingMode, rhs: SymbolRenderingMode) -> Bool {
-//        return (lhs, rhs) == (.monochrome, .monochrome) ||
-//        (lhs, rhs) == (.multicolor, .multicolor) ||
-//        (lhs, rhs) == (.hierarchical, .hierarchical) ||
-//        (lhs, rhs) == (.palette, .palette)
-//    }
-// }
-//
-//
-// extension SymbolRenderingMode: Equatable {
-//    public static func == (lhs: SymbolRenderingMode, rhs: SymbolRenderingMode) -> Bool {
-//        switch (lhs, rhs) {
-//        case (.monochrome, .monochrome),
-//            (.multicolor, .multicolor),
-//            (.hierarchical, .hierarchical),
-//            (.palette, .palette):
-//            return true
-//        default:
-//            return false
-//        }
-//    }
-// }

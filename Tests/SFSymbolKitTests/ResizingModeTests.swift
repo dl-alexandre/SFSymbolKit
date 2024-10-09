@@ -5,31 +5,29 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
-
-class ResizingModeTests: XCTestCase {
-
-    func testResizingModeNames() {
+@Suite("Resizing Mode Tests")
+struct ResizingModeTests {
+    @Test("Resizing Mode Name Test")
+    func testResizingModeNames() async throws {
         let expectedNames = ["Tile", "Stretch"]
 
         for (index, mode) in ResizingMode.allCases.enumerated() {
-            XCTAssertEqual(
-                mode.name,
-                expectedNames[index],
+            #expect(
+                mode.name == expectedNames[index],
                 "Expected \(expectedNames[index]) but got \(mode.name)"
             )
         }
     }
-
-    func testResizingModeValues() {
+    @Test("Resizing Mode Value Test")
+    func testResizingModeValues() async throws {
         let expectedScales: [Image.ResizingMode] = [.tile, .stretch]
 
         for (index, mode) in ResizingMode.allCases.enumerated() {
-            XCTAssertEqual(
-                mode.scale,
-                expectedScales[index],
+            #expect(
+                mode.scale == expectedScales[index],
                 "Expected \(expectedScales[index]) but got \(mode.scale)"
             )
         }

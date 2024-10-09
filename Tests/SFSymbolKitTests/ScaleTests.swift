@@ -5,31 +5,29 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
-
-class ScaleTests: XCTestCase {
-
-    func testScaleNames() {
+@Suite("Scale Tests")
+struct ScaleTests {
+    @Test("Scale Name Test")
+    func testScaleNames() async throws {
         let expectedNames = ["Small", "Medium", "Large"]
 
         for (index, scale) in Scale.allCases.enumerated() {
-            XCTAssertEqual(
-                scale.name,
-                expectedNames[index],
+            #expect(
+                scale.name == expectedNames[index],
                 "Expected \(expectedNames[index]) but got \(scale.name)"
             )
         }
     }
-
-    func testScaleValues() {
+    @Test("Scale Value Test")
+    func testScaleValues() async throws {
         let expectedScales: [Image.Scale] = [.small, .medium, .large]
 
         for (index, scale) in Scale.allCases.enumerated() {
-            XCTAssertEqual(
-                scale.scale,
-                expectedScales[index],
+            #expect(
+                scale.scale == expectedScales[index],
                 "Expected \(expectedScales[index]) but got \(scale.scale)"
             )
         }

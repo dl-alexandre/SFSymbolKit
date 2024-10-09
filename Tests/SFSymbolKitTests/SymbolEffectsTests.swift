@@ -5,7 +5,7 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
 
@@ -23,21 +23,21 @@ struct ScaleEffect: SymbolEffect {}
 struct VariableColorEffect: SymbolEffect {}
 struct WiggleEffect: SymbolEffect {}
 
-@available(iOS 17.0, *)
-final class SymbolEffectsTests: XCTestCase {
-
-    func testSymbolEffectsName() {
-        XCTAssertEqual(SymbolEffects.appear.name, "Appear")
-        XCTAssertEqual(SymbolEffects.automatic.name, "Automatic")
-        XCTAssertEqual(SymbolEffects.breathe.name, "Breathe")
-        XCTAssertEqual(SymbolEffects.bounce.name, "Bounce")
-        XCTAssertEqual(SymbolEffects.disappear.name, "Disappear")
-        XCTAssertEqual(SymbolEffects.pulse.name, "Pulse")
-        XCTAssertEqual(SymbolEffects.replace.name, "Replace")
-        XCTAssertEqual(SymbolEffects.rotate.name, "Rotate")
-        XCTAssertEqual(SymbolEffects.scale.name, "Scale")
-        XCTAssertEqual(SymbolEffects.variableColor.name, "Variable Color")
-        XCTAssertEqual(SymbolEffects.wiggle.name, "Wiggle")
+@Suite("Symbol Effect Tests")
+struct SymbolEffectsTests {
+    @Test("Symbol Effect Name Test")
+    func testSymbolEffectsName() async throws {
+        #expect(SymbolEffects.appear.name == "Appear")
+        #expect(SymbolEffects.automatic.name == "Automatic")
+        #expect(SymbolEffects.breathe.name == "Breathe")
+        #expect(SymbolEffects.bounce.name == "Bounce")
+        #expect(SymbolEffects.disappear.name == "Disappear")
+        #expect(SymbolEffects.pulse.name == "Pulse")
+        #expect(SymbolEffects.replace.name == "Replace")
+        #expect(SymbolEffects.rotate.name == "Rotate")
+        #expect(SymbolEffects.scale.name == "Scale")
+        #expect(SymbolEffects.variableColor.name == "Variable Color")
+        #expect(SymbolEffects.wiggle.name == "Wiggle")
     }
 
 //    @available(iOS 18.0, macOS 15.0, *)

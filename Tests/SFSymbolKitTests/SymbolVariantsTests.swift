@@ -5,27 +5,27 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
-
-class SymbolVariantsTests: XCTestCase {
-
-    func testSymbolVariantsName() {
-        XCTAssertEqual(SymbolVariants.circle.name, "Circle")
-        XCTAssertEqual(SymbolVariants.square.name, "Square")
-        XCTAssertEqual(SymbolVariants.rectangle.name, "Rectangle")
-        XCTAssertEqual(SymbolVariants.fill.name, "Fill")
-        XCTAssertEqual(SymbolVariants.slash.name, "Slash")
-        XCTAssertEqual(SymbolVariants.none.name, "None")
+@Suite("Symbol Variants Tests")
+struct SymbolVariantsTests {
+    @Test("Symbol Variant Name Test")
+    func testSymbolVariantsName() async throws {
+        #expect(SymbolVariants.circle.name == "Circle")
+        #expect(SymbolVariants.square.name == "Square")
+        #expect(SymbolVariants.rectangle.name == "Rectangle")
+        #expect(SymbolVariants.fill.name == "Fill")
+        #expect(SymbolVariants.slash.name == "Slash")
+        #expect(SymbolVariants.none.name == "None")
     }
-
-    func testSymbolVariantsVariant() {
-        XCTAssertEqual(SymbolVariants.circle.variant, .circle)
-        XCTAssertEqual(SymbolVariants.square.variant, .square)
-        XCTAssertEqual(SymbolVariants.rectangle.variant, .rectangle)
-        XCTAssertEqual(SymbolVariants.fill.variant, .fill)
-        XCTAssertEqual(SymbolVariants.slash.variant, .slash)
-        XCTAssertEqual(SymbolVariants.none.variant, .none)
+    @Test("Symbol Variant Variant Test")
+    func testSymbolVariantsVariant() async throws {
+        #expect(SymbolVariants.circle.variant == .circle)
+        #expect(SymbolVariants.square.variant == .square)
+        #expect(SymbolVariants.rectangle.variant == .rectangle)
+        #expect(SymbolVariants.fill.variant == .fill)
+        #expect(SymbolVariants.slash.variant == .slash)
+        #expect(SymbolVariants.none.variant == .none)
     }
 }

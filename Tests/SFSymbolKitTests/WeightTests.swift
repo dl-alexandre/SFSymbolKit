@@ -5,39 +5,38 @@
 //  See LICENSE for license information.
 //
 
-import XCTest
+import Testing
 @testable import SFSymbolKit
 import SwiftUI
-
-class WeightTests: XCTestCase {
-
-    func testWeightNames() {
+@Suite("Weight Tests")
+struct WeightTests {
+    @Test("Weight Name Test")
+    func testWeightNames() async throws {
         let expectedNames = [
             "Black", "Heavy", "Bold", "Semibold", "Medium",
             "Regular", "Light", "Thin", "UltraLight"
         ]
 
         for (index, weight) in Weight.allCases.enumerated() {
-            XCTAssertEqual(weight.name, expectedNames[index], "Expected \(expectedNames[index]) but got \(weight.name)")
+            #expect(weight.name == expectedNames[index], "Expected \(expectedNames[index]) but got \(weight.name)")
         }
     }
-
-    func testWeightValues() {
+    @Test("Weight Value Test")
+    func testWeightValues() async throws {
         let expectedWeights: [Font.Weight] = [
             .black, .heavy, .bold, .semibold, .medium,
                 .regular, .light, .thin, .ultraLight
         ]
 
         for (index, weight) in Weight.allCases.enumerated() {
-            XCTAssertEqual(
-                weight.weight,
-                expectedWeights[index],
+            #expect(
+                weight.weight == expectedWeights[index],
                 "Expected \(expectedWeights[index]) but got \(weight.weight)"
             )
         }
     }
-
-    @MainActor func testPickerContent() {
+    @Test("Picker Test")
+    @MainActor func testPickerContent() async throws {
         let sampleMode = Binding.constant(Weight.regular)
         let view = Weight.picker(weight: sampleMode)
 
@@ -47,15 +46,15 @@ class WeightTests: XCTestCase {
         let controller = NSHostingController(rootView: view)
 #endif
 
-        let expectation = self.expectation(description: "Load view")
+//        let expectation = try #require("Load view")
 
         DispatchQueue.main.async {
             let renderedView = controller.view
-            XCTAssertNotNil(renderedView, "The view should be rendered")
-            expectation.fulfill()
+            #expect(renderedView != nil, "The view should be rendered")
+//            expectation.fulfill()
         }
 
-        wait(for: [expectation], timeout: 1.0)
+//        wait(for: [expectation], timeout: 1.0)
 
         // Add further assertions if needed, e.g., verifying the content of the picker.
     }
