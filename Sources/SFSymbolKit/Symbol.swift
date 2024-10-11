@@ -70,7 +70,7 @@ public protocol Symbolizing {
     /// Method to symbolize categories.
     /// - Parameter categorization: An instance conforming to the Categorizing protocol.
     /// - Returns: An array of `Symbol` objects.
-    func symbolize(categorization: Categorizing) -> [Symbol]
+    func symbolize(categorization: Categorizing) -> Set<Symbol>
 }
 
 /// Function to convert a list of categories into a dictionary.
@@ -95,7 +95,7 @@ public class Symbolizer: Symbolizing {
     /// Function to decode the plist into a dictionary of symbols.
     /// - Parameter categorization: An instance conforming to the `Categorizing` protocol.
     /// - Returns: An array of `Symbol` objects.
-    public func symbolize(categorization: Categorizing) -> [Symbol] {
+    public func symbolize(categorization: Categorizing) -> Set<Symbol> {
         /// Get the URL of the plist file in the main bundle
         guard let fileURL = Bundle.module.url(forResource: "Symbols/symbol_categories", withExtension: "plist") else {
             fatalError("Can't find symbol_categories.plist")
@@ -110,7 +110,7 @@ public class Symbolizer: Symbolizing {
         let decoder = PropertyListDecoder()
         let categoryDict: [String: SymbolCategory] = convertCategories(categorization: categorization)
 
-        var symbols: [Symbol] = []
+        var symbols: Set<Symbol> = []
 
         do {
             let dict = try decoder.decode([String: [String]].self, from: data)
@@ -119,7 +119,7 @@ public class Symbolizer: Symbolizing {
                     categoryDict[categoryName]
                 }
                 let symbol = Symbol(name: key, categories: categories)
-                symbols.append(symbol)
+                symbols.insert(symbol)
             }
         } catch {
             fatalError("Can't decode data from symbol_categories.plist: \(error)")
@@ -133,7 +133,7 @@ public class Symbolizer: Symbolizing {
 ///   - categorization: An instance conforming to the `Categorizing` protocol.
 ///   - symbolization: An instance conforming to the `Symbolizing` protocol.
 /// - Returns: An array of `Symbol` objects.
-public func convertSymbols(categorization: Categorizing, symbolization: Symbolizing) -> [Symbol] {
+public func convertSymbols(categorization: Categorizing, symbolization: Symbolizing) -> Set<Symbol> {
     let symbols = symbolization.symbolize(categorization: categorization)
     return symbols
 }
