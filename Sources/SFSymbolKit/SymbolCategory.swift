@@ -62,3 +62,17 @@ public class Categorizer: Categorizing {
         }
     }
 }
+
+/// Function to convert a list of categories into a dictionary.
+/// - Parameter categorization: An instance conforming to the Categorizing protocol.
+/// - Returns: A dictionary where the keys are category keys and the values are `SymbolCategory` objects.
+public func convertCategories(categorization: Categorizing) -> [String: SymbolCategory] {
+    let categoryList: [SymbolCategory] = categorization.categorize()
+    var categoryDict: [String: SymbolCategory] = [:]
+
+    for category in categoryList {
+        categoryDict[category.key] = category
+    }
+
+    return categoryDict
+}
