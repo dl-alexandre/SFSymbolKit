@@ -128,21 +128,21 @@ class MockSymbolizer: Symbolizing {
         "symbol2": ["variablecolor"]
     ]
 
-    func symbolize(categorization: Categorizing) -> [Symbol] {
+    func symbolize(categorization: Categorizing) -> Set<Symbol> {
         let symbolList = mockSymbolDict
         let categoryDict: [String: SFSymbolKit.SymbolCategory] = categorization.categorize().reduce(
             into: [String: SFSymbolKit.SymbolCategory]()
         ) { dict, category in
             dict[category.key] = category
         }
-        var symbols: [Symbol] = []
+        var symbols: Set<Symbol> = []
 
         for (key, categoryNames) in symbolList {
             let categories: [SFSymbolKit.SymbolCategory] = categoryNames.compactMap { categoryName in
                 categoryDict[categoryName]
             }
             let symbol = Symbol(name: key, categories: categories)
-            symbols.append(symbol)
+            symbols.insert(symbol)
         }
         return symbols
     }
